@@ -1,0 +1,6 @@
+name: site
+version: 1.0.0
+
+dependencies:
+  crouter:
+    github: jreinert/crouter
