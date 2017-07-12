@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "type": "static",
+  "inject": {
+    "head": [
+      {
+        "type": "style",
+        "value": "/style.css"
+      },
+      {
+        "type": "segment",
+        "value": "API KEY HERE"
+      },
+      {
+        "file": "scripts/config.js"
+      }
+    ],
+    "body": [
+      {
+        "type": "script",
+        "value": "/app.js"
+      }
+    ]
+  }
+}

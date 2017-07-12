@@ -1,0 +1,10 @@
+{
+  "name": "api",
+  "type": "static",
+  "description": "Static website example.",
+  "headers": {
+    "/*.css": {
+      "X-Foo": "bar"
+    }
+  }
+}

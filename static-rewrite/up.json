@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "type": "static",
+  "description": "Static website example.",
+  "headers": {
+    "*": {
+      "X-Foo": "1",
+      "X-Baz": "2",
+      "X-Type": "default"
+    },
+    "*.css": {
+      "X-Type": "css"
+    }
+  },
+  "redirects": {
+    "/blog": {
+      "location": "https://blog.apex.sh/",
+      "status": 301
+    },
+    "/docs/*/guides/*.html": {
+      "location": "/help/$1/$2",
+      "status": 301
+    },
+    "/*": {
+      "location": "/index.html",
+      "status": 302
+    }
+  }
+}
