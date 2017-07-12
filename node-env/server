@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const http = require('http')
+
+const port = ~~process.env.PORT
+const env = {}
+
+for (var key in process.env) {
+  if (key.indexOf('UP_') == 0) {
+    env[key] = process.env[key]
+  }
+}
+
+http.createServer((req, res) => {
+  res.end(JSON.stringify(env, null, 2))
+}).listen(port, '127.0.0.1')
