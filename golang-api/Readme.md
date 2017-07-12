@@ -32,3 +32,6 @@ $ curl https://example.com/
 There's no need to wrap `pets` in a mutex since
 Lambda processes only a single request per container
 concurrently.
+
+Don't actually rely on local state like this, use a database. In-memory
+state is only useful for caching in a Lambda container.
