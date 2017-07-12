@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const http = require('http')
+
+const port = ~~process.env.PORT
+
+http.createServer((req, res) => {
+  res.end('Hello World from Node.js\n')
+}).listen(port, '127.0.0.1')
