@@ -3,7 +3,7 @@
 
 Simple website example.
 
-## Install
+## Setup
 
 ```
 $ crystal dep

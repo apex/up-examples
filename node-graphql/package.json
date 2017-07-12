@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "co-body": "^5.1.1",
+    "graph.ql": "^2.0.2",
+    "koa": "^2.2.0",
+    "koa-json": "^2.0.2"
+  }
+}
