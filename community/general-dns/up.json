@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "dns": {
+    "zones": [
+      {
+        "name": "something.com",
+        "records": [
+          {
+            "name": "something.com",
+            "type": "A",
+            "ttl": 300,
+            "value": ["35.161.83.243"]
+          },
+          {
+            "name": "blog.something.com",
+            "type": "CNAME",
+            "ttl": 300,
+            "value": ["34.209.172.67"]
+          },
+          {
+            "name": "api.something.com",
+            "type": "A",
+            "ttl": 300,
+            "value": ["54.187.185.18"]
+          }
+        ]
+      }
+    ]
+  }
+}
