@@ -1,11 +1,7 @@
 
 ## Up Examples
 
-Example applications, APIs, and sites for [Up](https://github.com/apex/up).
-
-## Examples
-
-Examples are grouped by Up plan:
+Example applications, APIs, and sites for [Up](https://github.com/apex/up), organized by plan:
 
 - [Community](community) edition.
 - [Pro](pro) commercial edition.
