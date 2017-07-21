@@ -1,7 +1,7 @@
 
-# Node Basic
+# Errors
 
-Hello World example.
+Default error pages.
 
 ## Deploy
 

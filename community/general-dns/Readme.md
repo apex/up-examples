@@ -1,7 +1,7 @@
 
 # DNS
 
-Example of provisioning DNS zones and records.
+DNS zones and record management.
 
 ## Deploy
 

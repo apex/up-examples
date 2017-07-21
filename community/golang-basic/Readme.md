@@ -1,7 +1,7 @@
 
 # Golang Basic
 
-Hello World example.
+Hello world.
 
 ## Deploy
 

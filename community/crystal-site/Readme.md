@@ -1,7 +1,7 @@
 
 # Crystal Site
 
-Simple website example.
+Larger site.
 
 ## Setup
 

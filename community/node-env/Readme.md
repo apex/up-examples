@@ -1,7 +1,7 @@
 
 # Node Env
 
-Environment variable example.
+Environment variable management.
 
 ## Deploy
 

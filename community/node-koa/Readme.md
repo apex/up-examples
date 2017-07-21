@@ -1,7 +1,7 @@
 
 # Node Koa
 
-Koa website example.
+Koa website.
 
 ## Setup
 

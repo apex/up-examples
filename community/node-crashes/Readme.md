@@ -1,7 +1,7 @@
 
 # Node Crashes
 
-Example showing recovery of crashed processes.
+Crash recovery from uncaught exceptions.
 
 ## Deploy
 

@@ -1,7 +1,7 @@
 
 # Node GraphQL
 
-GraphQL server example.
+GraphQL server.
 
 ## Setup
 

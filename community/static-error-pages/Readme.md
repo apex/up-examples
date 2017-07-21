@@ -1,7 +1,7 @@
 
 # Static Error Pages
 
-Error pages example.
+Custom error pages.
 
 ## Deploy
 

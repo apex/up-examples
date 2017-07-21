@@ -1,11 +1,7 @@
 
 # Ignorefiles
 
-Example of ignore file usage. Precedence is:
-
-- .gitignore
-- .npmignore
-- .upignore
+Ignore file usage to omit files.
 
 ## Deploy
 
@@ -21,7 +17,8 @@ $ up -v
 
 ## Notes
 
-The following files must be deployed, as they are used for the reverse proxy:
+Precedence is:
 
-- up.json
-- main
+- .gitignore
+- .npmignore
+- .upignore

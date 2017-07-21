@@ -1,7 +1,7 @@
 
 # Rewrite
 
-Rewrite and redirection example.
+Rewrites and redirection.
 
 ## Deploy
 

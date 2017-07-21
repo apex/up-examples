@@ -1,7 +1,7 @@
 
 # Crystal Basic
 
-Hello World example.
+Hello world.
 
 ## Deploy
 
