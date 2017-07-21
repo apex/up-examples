@@ -7,3 +7,8 @@ build:
 	@echo "==> Building enterprise index"
 	@sh index.sh enterprise > enterprise/Readme.md
 .PHONY: build
+
+# Source LOC.
+cloc:
+	@cloc --exclude-dir=node_modules .
+.PHONY: cloc
