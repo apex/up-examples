@@ -1,3 +1,9 @@
+
+# Test examples.
+test:
+	@sh test.sh
+.PHONY: test
+
 # Build index.
 build:
 	@echo "==> Building community index"
