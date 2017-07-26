@@ -6,16 +6,19 @@ const port = ~~process.env.PORT
 
 http.createServer((req, res) => {
   if (Math.random() > .90) {
-    res.statusCode = 500 + (Math.random() * 15 | 0)
+    res.statusCode = 500 + (Math.random() * 10 | 0)
     res.end('5xx error')
+    console.log('%s %s -> %d', req.method, req.url, res.statusCode)
     return
   }
 
   if (Math.random() > .75) {
-    res.statusCode = 400 + (Math.random() * 15 | 0)
+    res.statusCode = 400 + (Math.random() * 10 | 0)
     res.end('4xx error')
+    console.log('%s %s -> %d', req.method, req.url, res.statusCode)
     return
   }
 
   res.end('ok')
+  console.log('%s %s -> %d', req.method, req.url, 200)
 }).listen(port, '127.0.0.1')
