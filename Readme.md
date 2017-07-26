@@ -3,7 +3,7 @@
 
 Example applications, APIs, and sites for [Up](https://github.com/apex/up), organized by plan:
 
-- [Community](community) edition.
+- [OSS](oss) edition.
 - [Pro](pro) commercial edition.
 - [Enterprise](enterprise) commercial edition.
 
