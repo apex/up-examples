@@ -5,6 +5,7 @@
 - [golang api](./golang-api) – REST API example.
 - [golang basic](./golang-basic) – Hello world.
 - [node basic](./node-basic) – Hello world.
+- [node basic npmstart](./node-basic-npmstart) – Hello world using the npm start convention.
 - [node crashes](./node-crashes) – Crash recovery from uncaught exceptions.
 - [node env](./node-env) – Environment variable management.
 - [node errors](./node-errors) – Default error pages.
