@@ -10,6 +10,7 @@
 - [node errors](./node-errors) – Default error pages.
 - [node graphql](./node-graphql) – GraphQL server.
 - [node koa](./node-koa) – Koa website.
+- [node noconfig](./node-noconfig) – Bare minimal example with zero config.
 - [python basic](./python-basic) – Hello world.
 - [static basic](./static-basic) – Basic static site.
 - [static error pages](./static-error-pages) – Custom error pages.
