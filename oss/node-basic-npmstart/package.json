@@ -1,6 +1,0 @@
-{
-  "name": "api",
-  "scripts": {
-    "start": "node app"
-  }
-}

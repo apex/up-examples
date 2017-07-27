@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const Schema = require('graph.ql')
 const json = require('koa-json')
 const body = require('co-body')
