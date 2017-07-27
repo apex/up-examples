@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.Images {
+  margin: 100px;
+  column-count: 3;
+  column-gap: 25px;
+  column-rule-width: 0;
+}
+
+.Image {
+  display: inline-block;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.Image img {
+  width: 100%;
+}
