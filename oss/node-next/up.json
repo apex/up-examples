@@ -1,0 +1,6 @@
+{
+  "name": "api",
+  "hooks": {
+    "build": "next build"
+  }
+}
