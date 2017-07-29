@@ -8,8 +8,10 @@
 - [node crashes](./node-crashes) – Crash recovery from uncaught exceptions.
 - [node env](./node-env) – Environment variable management.
 - [node errors](./node-errors) – Default error pages.
+- [node express](./node-express) – Express application.
 - [node graphql](./node-graphql) – GraphQL server.
 - [node koa](./node-koa) – Koa website.
+- [node next](./node-next) – Next.js application.
 - [node noconfig](./node-noconfig) – Bare minimal example with zero config.
 - [python basic](./python-basic) – Hello world.
 - [static basic](./static-basic) – Basic static site.
