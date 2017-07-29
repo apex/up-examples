@@ -1,0 +1,7 @@
+{
+  "name": "api",
+  "hooks": {
+    "build": "browserify --node app.js > server.js",
+    "clean": "rm server.js"
+  }
+}

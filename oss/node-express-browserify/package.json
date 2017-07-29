@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "express": "^4.15.3"
+  }
+}
