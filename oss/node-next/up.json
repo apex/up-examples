@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "app",
   "hooks": {
     "build": "next build"
   },

@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "app",
   "environment": {
     "UP_FOO": "foo",
     "UP_BAR": "bar"
