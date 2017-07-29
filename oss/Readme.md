@@ -9,6 +9,7 @@
 - [node env](./node-env) – Environment variable management.
 - [node errors](./node-errors) – Default error pages.
 - [node express](./node-express) – Express application.
+- [node express browserify](./node-express-browserify) – Express application using a bundler to reduce require() time and build size.
 - [node graphql](./node-graphql) – GraphQL server.
 - [node koa](./node-koa) – Koa website.
 - [node next](./node-next) – Next.js application.
