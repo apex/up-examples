@@ -24,6 +24,12 @@ func main() {
 // curl :3000/
 func get(w http.ResponseWriter, r *http.Request) {
 	log.Println("GET /")
+
+	if len(pets) == 0 {
+		fmt.Fprintf(w, "no pets")
+		return
+	}
+
 	for name := range pets {
 		fmt.Fprintf(w, "- %s\n", name)
 	}
