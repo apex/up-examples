@@ -12,6 +12,7 @@
         "value": "API KEY HERE"
       },
       {
+        "type": "inline script",
         "file": "scripts/config.js"
       }
     ],
