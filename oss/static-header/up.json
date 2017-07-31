@@ -3,8 +3,11 @@
   "type": "static",
   "description": "Static website example.",
   "headers": {
+    "/*": {
+      "X-Something": "I am applied to everything"
+    },
     "/*.css": {
-      "X-Foo": "bar"
+      "X-Something-Else": "I am applied to styles"
     }
   }
 }
