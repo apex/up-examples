@@ -16,6 +16,7 @@
 - [node noconfig](./node-noconfig) – Bare minimal example with zero config.
 - [python basic](./python-basic) – Hello world.
 - [static basic](./static-basic) – Basic static site.
+- [static dir](./static-dir) – Basic static site with custom root directory.
 - [static error pages](./static-error-pages) – Custom error pages.
 - [static header](./static-header) – Header injection example, configured in JSON.
 - [static inject](./static-inject) – Script and style injection example, configured in JSON.
