@@ -1,22 +1,25 @@
 {
   "name": "app",
   "dns": {
-    "something.com": {
-      "something.com": {
+    "something.com": [
+      {
+        "name": "something.com",
         "type": "A",
         "ttl": 300,
         "value": ["35.161.83.243"]
       },
-      "blog.something.com": {
+      {
+        "name": "blog.something.com",
         "type": "CNAME",
         "ttl": 300,
         "value": ["34.209.172.67"]
       },
-      "api.something.com": {
+      {
+        "name": "api.something.com",
         "type": "A",
         "ttl": 300,
         "value": ["54.187.185.18"]
       }
-    }
+    ]
   }
 }
