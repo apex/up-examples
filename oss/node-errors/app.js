@@ -1,7 +1,4 @@
-#!/usr/bin/env node
-
 const http = require('http')
-
 const port = ~~process.env.PORT
 
 http.createServer((req, res) => {
@@ -21,4 +18,4 @@ http.createServer((req, res) => {
 
   res.end('ok')
   console.log('%s %s -> %d', req.method, req.url, 200)
-}).listen(port, '127.0.0.1')
+}).listen(port)

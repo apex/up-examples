@@ -1,9 +1,5 @@
-#!/usr/bin/env python
-
 from BaseHTTPServer import BaseHTTPRequestHandler,HTTPServer
 import os
-
-PORT_NUMBER = 3000
 
 class myHandler(BaseHTTPRequestHandler):
 	def do_GET(self):
