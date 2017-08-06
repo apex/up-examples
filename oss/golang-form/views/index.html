@@ -15,8 +15,8 @@
   </head>
   <body>
     <h1>Form Example</h1>
-    {{if .Name}}
-      <p>Hello {{.Name}} your email is {{.Email}}, neat.</p>
+    {{with .Name}}
+      <p>Hello {{.}}.</p>
     {{else}}
       <p>Fill out this amazing form.</p>
     {{end}}

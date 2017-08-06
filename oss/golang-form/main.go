@@ -50,11 +50,6 @@ func submit(w http.ResponseWriter, r *http.Request) {
 		Value: name,
 	})
 
-	http.SetCookie(w, &http.Cookie{
-		Name:  "email",
-		Value: email,
-	})
-
 	redirectBack(w, r)
 }
 
