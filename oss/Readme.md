@@ -4,6 +4,7 @@
 - [general ignorefiles](./general-ignorefiles) – Ignore file usage to omit files.
 - [golang api](./golang-api) – REST API example.
 - [golang basic](./golang-basic) – Hello world.
+- [golang form](./golang-form) – Simple form processing.
 - [node basic](./node-basic) – Hello world.
 - [node crashes](./node-crashes) – Crash recovery from uncaught exceptions.
 - [node env](./node-env) – Environment variable management.
