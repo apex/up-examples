@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Example</title>
+    <style>
+      body {
+        padding: 50px;
+        font: 14px Helvetica;
+      }
+      img {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Example</h1>
+    {{if .Name}}
+      <p>Hello {{.Name}} your email is {{.Email}}, neat.</p>
+    {{else}}
+      <p>Fill out this amazing form.</p>
+    {{end}}
+    <form action="submit" method="post">
+      <input type="text" name="name" placeholder="Name">
+      <input type="text" name="email" placeholder="Email">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
