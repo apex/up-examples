@@ -15,15 +15,15 @@
   "redirects": {
     "/blog": {
       "location": "https://blog.apex.sh/",
-      "status": 301
+      "status": 302
     },
-    "/docs/*/guides/*.html": {
-      "location": "/help/$1/$2",
-      "status": 301
+    "/store/:brand/products/:product": {
+      "location": "/shop/:brand/:product",
+      "status": 302
     },
     "/*": {
-      "location": "/index.html",
-      "status": 302
+      "location": "/",
+      "status": 200
     }
   }
 }
