@@ -5,7 +5,7 @@
     "head": [
       {
         "type": "style",
-        "value": "/style.css"
+        "value": "style.css"
       },
       {
         "type": "segment",
@@ -13,13 +13,13 @@
       },
       {
         "type": "inline script",
-        "file": "scripts/config.js"
+        "file": "src/config.js"
       }
     ],
     "body": [
       {
         "type": "script",
-        "value": "/app.js"
+        "value": "src/app.js"
       }
     ]
   }
