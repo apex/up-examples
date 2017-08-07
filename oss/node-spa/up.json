@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "type": "static",
+  "static": {
+    "dir": "build"
+  },
+  "redirects": {
+    "/*": {
+      "location": "/",
+      "status": 200
+    }
+  },
+  "hooks": {
+    "build": "npm run build",
+    "clean": "rm -fr build"
+  }
+}

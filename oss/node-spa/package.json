@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "neutrino": "^6.1.5",
+    "neutrino-preset-react": "^6.1.5",
+    "neutrino-preset-react-require": "^1.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "scripts": {
+    "start": "neutrino start --use neutrino-preset-react --use neutrino-preset-react-require",
+    "build": "neutrino build --use neutrino-preset-react --use neutrino-preset-react-require"
+  }
+}
