@@ -15,6 +15,7 @@
 - [node koa](./node-koa) – Koa website.
 - [node next](./node-next) – Next.js application.
 - [node noconfig](./node-noconfig) – Bare minimal example with zero config.
+- [node spa](./node-spa) – Single page app using React & Neutrino.
 - [python basic](./python-basic) – Hello world.
 - [static basic](./static-basic) – Basic static site.
 - [static dir](./static-dir) – Basic static site with custom root directory.
