@@ -5,20 +5,21 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/gorilla/pat"
-	"github.com/segmentio/go-env"
 )
 
 // pets database-ish
 var pets = make(map[string]struct{})
 
 func main() {
+	addr := ":" + os.Getenv("PORT")
 	app := pat.New()
 	app.Get("/", get)
 	app.Post("/", post)
 	app.Delete("/{name}", del)
-	log.Fatal(http.ListenAndServe(env.MustGet("UP_ADDR"), app))
+	log.Fatal(http.ListenAndServe(addr, app))
 }
 
 // curl :3000/

@@ -13,7 +13,7 @@ var views = template.Must(template.ParseGlob("views/*.html"))
 
 func main() {
 	log.SetHandler(logfmt.New(os.Stdout))
-	addr := os.Getenv("UP_ADDR")
+	addr := ":" + os.Getenv("PORT")
 	http.HandleFunc("/submit", submit)
 	http.HandleFunc("/", index)
 	if err := http.ListenAndServe(addr, nil); err != nil {

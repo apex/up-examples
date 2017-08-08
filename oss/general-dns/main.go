@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	addr := os.Getenv("UP_ADDR")
+	addr := ":" + os.Getenv("PORT")
 	http.HandleFunc("/", hello)
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
