@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "general-dns",
   "dns": {
     "something.com": [
       {

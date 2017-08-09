@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "static-dir",
   "type": "static",
   "static": {
     "dir": "public"
