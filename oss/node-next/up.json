@@ -1,8 +1,5 @@
 {
   "name": "app",
-  "hooks": {
-    "build": "next build"
-  },
   "lambda": {
     "memory": 1536,
     "timeout": 30
