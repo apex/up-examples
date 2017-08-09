@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "node-express-browserify",
   "hooks": {
     "build": "browserify --node app.js > server.js",
     "clean": "rm server.js"
