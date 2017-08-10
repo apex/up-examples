@@ -3,6 +3,8 @@ const json = require('koa-json')
 const body = require('co-body')
 const Koa = require('koa')
 
+const { PORT = 3000 } = process.env
+
 const pets = [
   { id: '0', name: 'Tobi' },
   { id: '1', name: 'Loki' },
@@ -40,5 +42,4 @@ app.use(function *(){
   this.body = data
 })
 
-const port = ~~process.env.PORT
-app.listen(port)
+app.listen(PORT)

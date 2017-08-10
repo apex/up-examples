@@ -1,6 +1,6 @@
 const http = require('http')
 
-const port = ~~process.env.PORT
+const { PORT = 3000 } = process.env
 const env = {}
 
 for (var key in process.env) {
@@ -11,4 +11,4 @@ for (var key in process.env) {
 
 http.createServer((req, res) => {
   res.end(JSON.stringify(env, null, 2))
-}).listen(port)
+}).listen(PORT)

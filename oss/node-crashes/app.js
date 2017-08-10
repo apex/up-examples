@@ -1,5 +1,5 @@
 const http = require('http')
-const port = ~~process.env.PORT
+const { PORT = 3000 } = process.env
 
 http.createServer((req, res) => {
   if (Math.random() > .90) {
@@ -7,4 +7,4 @@ http.createServer((req, res) => {
   } else {
     res.end('Hello World')
   }
-}).listen(port)
+}).listen(PORT)
