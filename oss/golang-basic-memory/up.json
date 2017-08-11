@@ -1,0 +1,6 @@
+{
+  "name": "app",
+  "lambda": {
+    "memory": 1536
+  }
+}

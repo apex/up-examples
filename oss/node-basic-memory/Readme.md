@@ -1,7 +1,7 @@
 
 # Node Basic
 
-Hello world.
+Hello world with max memory/cpu.
 
 ## Deploy
 
