@@ -10,7 +10,7 @@ class App < Crouter::Router
         <head>
           <meta charset="utf-8">
           <title>Hello</title>
-          <link rel="stylesheet" href="/style.css">
+          <link rel="stylesheet" href="style.css">
         </head>
         <body>
           <p>Hello World</p>
