@@ -1,3 +1,6 @@
 {
-  "name": "app"
+  "name": "app",
+  "error_pages": {
+    "enable": true
+  }
 }

@@ -1,8 +1,0 @@
-{
-  "name": "app",
-  "regions": [
-    "us-*",
-    "eu-*",
-    "ca-central-1"
-  ]
-}

@@ -8,3 +8,8 @@ Default error pages.
 ```
 $ up
 ```
+
+## Notes
+
+The default error page is only used if explicitly enabled in `up.json`.
+

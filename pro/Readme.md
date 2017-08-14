@@ -1,2 +1,0 @@
-- [node global](./node-global) – Example of provisioning and deploying many Lambda regions.
-- [static global](./static-global) – Basic static site.
