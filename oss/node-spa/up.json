@@ -4,6 +4,9 @@
   "static": {
     "dir": "build"
   },
+  "lambda": {
+    "memory": 1024
+  },
   "redirects": {
     "/*": {
       "location": "/",
