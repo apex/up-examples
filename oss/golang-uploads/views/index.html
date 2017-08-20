@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Example</title>
+    <style>
+      body {
+        padding: 50px;
+        font: 14px Helvetica;
+      }
+      img {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Multipart Form Example</h1>
+    {{if .Name}}
+      <p>Upload a {{.Size}} byte {{.Type}} file named {{.Name}}.</p>
+    {{else}}
+      <p>Upload an image.</p>
+    {{end}}
+    <form action="submit" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" placeholder="Image">
+      <input type="submit" value="Upload">
+    </form>
+  </body>
+</html>
