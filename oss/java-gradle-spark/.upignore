@@ -1,0 +1,9 @@
+.gradle
+build
+gradle
+src
+*.gradle
+gradlew
+gradlew.bat
+*.md
+up.json

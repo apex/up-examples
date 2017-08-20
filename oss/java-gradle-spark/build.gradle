@@ -1,0 +1,55 @@
+group 'com.github.apex.up'
+version '1.0.0'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.sparkjava:spark-core:2.6.0"
+    compile "org.slf4j:slf4j-log4j12:1.7.25"
+    testCompile "junit:junit:4.12"
+}
+
+// create a self-contained jar that is executable
+task fatJar(dependsOn: classes, type: Jar) {
+    classifier 'fat'
+
+    doFirst {
+        from {
+            configurations.compile.collect { zipTree(it).matching {
+                exclude "META-INF/*.SF"
+                exclude "META-INF/*.DSA"
+                exclude "META-INF/*.RSA"
+            } }
+        }
+    }
+
+    from (sourceSets*.output.classesDir, sourceSets*.output.resourcesDir) {
+        // noop
+    }
+
+    manifest {
+        attributes 'Main-Class': 'com.github.apex.up.examples.spark.Application'
+        attributes("Implementation-Title": "server", "Specification-Version": version, "Implementation-Version": version)
+    }
+
+    // for convenience, we make a file in the root dir named server with no extension
+    doLast {
+        def srcFile = new File("${buildDir}/libs/${archiveName}")
+        def shortcutFile = new File("server")
+        shortcutFile.delete()
+        shortcutFile << "#!/usr/bin/env sh\n"
+        shortcutFile << 'exec java -cp 3rdparty/*:$0 com.github.apex.up.examples.spark.Application "$@"' + "\n"
+        shortcutFile << srcFile.bytes
+        shortcutFile.setExecutable(true, true)
+        srcFile.delete()
+        srcFile << shortcutFile.bytes
+        srcFile.setExecutable(true, true)
+    }
+}

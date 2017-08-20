@@ -1,0 +1,10 @@
+{
+  "name": "java-gradle-spark",
+  "hooks": {
+    "build": "./gradlew clean build fatJar",
+    "clean": "rm server"
+  },
+  "lambda": {
+    "memory": 1536
+  }
+}
