@@ -9,19 +9,20 @@
         font: 14px Helvetica;
       }
       img {
-        width: 100px;
+        max-width: 150px;
       }
     </style>
   </head>
   <body>
     <h1>Multipart Form Example</h1>
     {{if .Name}}
-      <p>Upload a {{.Size}} byte {{.Type}} file named {{.Name}}.</p>
+      <p>Uploaded a <strong>{{.Size | humanize_bytes}}</strong> byte <strong>{{.Type}}</strong> file named <strong>{{.Name}}</strong>.</p>
+      <img src="data:image/jpg;base64,{{.Image}}">
     {{else}}
       <p>Upload an image.</p>
     {{end}}
     <form action="submit" method="post" enctype="multipart/form-data">
-      <input type="file" name="image" placeholder="Image">
+      <input type="file" name="image" accept="image/jpeg">
       <input type="submit" value="Upload">
     </form>
   </body>

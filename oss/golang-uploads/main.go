@@ -1,15 +1,22 @@
 package main
 
 import (
+	"encoding/base64"
 	"html/template"
+	"io/ioutil"
 	"net/http"
 	"os"
 
 	"github.com/apex/log"
 	"github.com/apex/log/handlers/logfmt"
+	"github.com/dustin/go-humanize"
 )
 
-var views = template.Must(template.ParseGlob("views/*.html"))
+var funcs = template.FuncMap{
+	"humanize_bytes": humanize.Bytes,
+}
+
+var views = template.Must(template.New("").Funcs(funcs).ParseGlob("views/*.html"))
 
 func main() {
 	log.SetHandler(logfmt.New(os.Stdout))
@@ -35,14 +42,23 @@ func submit(w http.ResponseWriter, r *http.Request) {
 	}
 	defer file.Close()
 
+	b, err := ioutil.ReadAll(file)
+	if err != nil {
+		log.WithError(err).Error("reading file")
+		http.Error(w, "Error reading file.", http.StatusInternalServerError)
+		return
+	}
+
 	w.Header().Set("Content-Type", "text/html")
 	views.ExecuteTemplate(w, "index.html", struct {
-		Name string
-		Size int64
-		Type string
+		Name  string
+		Size  uint64
+		Type  string
+		Image string
 	}{
-		Name: hdr.Filename,
-		Size: hdr.Size,
-		Type: hdr.Header.Get("Content-Type"),
+		Name:  hdr.Filename,
+		Size:  uint64(hdr.Size),
+		Type:  hdr.Header.Get("Content-Type"),
+		Image: base64.StdEncoding.EncodeToString(b),
 	})
 }
