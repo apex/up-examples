@@ -2,4 +2,4 @@
 *.pyo
 *.pyc
 
-# dont ignore .pypath. note up will ignore anything ignored in .gitignore: https://github.com/apex/up/blob/master/docs/configuration.md#ignoring-files
+# dont ignore .pypath. note: up will ignore anything ignored in .gitignore: https://github.com/apex/up/blob/master/docs/configuration.md#ignoring-files
