@@ -26,7 +26,7 @@ The `build` hook in `up.json` simply runs `make`, which ensures that the `./node
 }
 ```
 
-The `proxy.command` script is what is run inside Lambda to start your server. You can think of this as `npm start`, however you'd likely want `npm start` to simply be `node app.js` for local development, defining `proxy.command` is strictly for running in production.
+The `proxy.command` script is run inside Lambda to start your server. You can think of this as `npm start`, however you'd likely want `npm start` to be `node app.js` for local development. Defining `proxy.command` is strictly for running in production.
 
 ```json
 {
