@@ -9,6 +9,7 @@
 - [golang uploads](./golang-uploads) – Simple multi-part form processing.
 - [java gradle spark](./java-gradle-spark) – Hello world.
 - [java maven spark](./java-maven-spark) – Hello world.
+- [node 8](./node-8) – Node 8 application using a binary.
 - [node basic](./node-basic) – Hello world.
 - [node basic memory](./node-basic-memory) – Hello world with max memory/cpu.
 - [node crashes](./node-crashes) – Crash recovery from uncaught exceptions.
