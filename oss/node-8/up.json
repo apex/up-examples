@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "hooks": {
+    "build": "docker run --rm -w /tmp -v $(PWD):/tmp romuloaalves/up-node8 pkg --output=server --targets node8-linux .",
+    "clean": "rm server"
+  }
+}

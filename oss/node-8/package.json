@@ -1,0 +1,9 @@
+{
+  "bin": "app.js",
+  "dependencies": {
+    "sleep-promise": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
