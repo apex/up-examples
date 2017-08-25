@@ -1,0 +1,5 @@
+LICENSE
+node_modules/is-generator-function/testling.html
+yarn.lock
+*.md
+*.ts
