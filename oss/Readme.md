@@ -8,6 +8,7 @@
 - [golang form](./golang-form) – Simple form processing.
 - [golang uploads](./golang-uploads) – Simple multi-part form processing.
 - [java gradle spark](./java-gradle-spark) – Hello world.
+- [java gradle springboot](./java-gradle-springboot) – Hello world.
 - [java maven spark](./java-maven-spark) – Hello world.
 - [node 8](./node-8) – Node 8 application using a binary.
 - [node basic](./node-basic) – Hello world.
