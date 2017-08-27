@@ -1,0 +1,14 @@
+{
+  "name": "pong",
+  "profile": "comware-up",
+  "regions": [
+    "ap-southeast-2"
+  ],
+  "lambda": {
+    "memory": 128,
+    "timeout": 10
+  },
+  "hooks": {
+    "build": "make build.up"
+  }
+}
