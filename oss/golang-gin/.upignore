@@ -1,7 +1,2 @@
-.git
-.idea
-.gitignore
-Gopkg.*
-Makefile
-Readme.md
-*.go
+*
+!server
