@@ -2,10 +2,12 @@
 - [crystal site](./crystal-site) – Larger site.
 - [general dns](./general-dns) – DNS zones and record management.
 - [general ignorefiles](./general-ignorefiles) – Ignore file usage to omit files.
+- [general throttling](./general-throttling) – DNS zones and record management.
 - [golang api](./golang-api) – REST API example.
 - [golang basic](./golang-basic) – Hello world.
 - [golang basic memory](./golang-basic-memory) – Hello world with max Lambda memory/cpu.
 - [golang form](./golang-form) – Simple form processing.
+- [golang gin](./golang-gin) – Hello World using the Gin framework.
 - [golang uploads](./golang-uploads) – Simple multi-part form processing.
 - [java gradle spark](./java-gradle-spark) – Hello world.
 - [java gradle springboot](./java-gradle-springboot) – Hello world.
@@ -25,8 +27,8 @@
 - [node spa](./node-spa) – Single page app using React & Neutrino.
 - [python basic](./python-basic) – Hello world.
 - [python bottle](./python-bottle) – A python app using the Bottle microframework.
-- [python flask](./python-flask) – A simple python example using the Flask microframework.
 - [python django](./python-django) – A simple python example using the Django web framework.
+- [python flask](./python-flask) – A simple python example using the Flask microframework.
 - [static basic](./static-basic) – Basic static site.
 - [static dir](./static-dir) – Basic static site with custom root directory.
 - [static error pages](./static-error-pages) – Custom error pages.

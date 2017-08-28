@@ -1,5 +1,5 @@
 {
-  "name": "pong",
+  "name": "app",
   "regions": [
     "ap-southeast-2"
   ],
@@ -8,6 +8,7 @@
     "timeout": 10
   },
   "hooks": {
-    "build": "GOOS=linux GOARCH=amd64 go build -o server ./..."
+    "build": "GOOS=linux GOARCH=amd64 go build -o server cmd/api/main.go",
+    "clean": "rm server"
   }
 }

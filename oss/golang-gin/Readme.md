@@ -1,6 +1,7 @@
 
-# Golang Gin Service
+# Golang Gin
 
+Hello World using the Gin framework.
 
 ## Install dependencies
 
@@ -11,19 +12,19 @@ which you may need to install.
 $ deps ensure
 ```
 
-## Run Locally
-
-You can also run this up locally using the following
-
-```
-$ go build -o server ./...
-$ PORT=3000 ./server
-```
-
 ## Deploy
-
-This will deploy to default `AWS` profile.
 
 ```
 $ up
+```
+
+## Notes
+
+In this case .upignore specifies files to omit, however in cases such as Golang where
+typically only a binary is uploaded, you could whitelist everything and blacklist only `server`,
+the binary itself.
+
+```
+*
+!server
 ```

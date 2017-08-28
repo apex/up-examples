@@ -3,6 +3,5 @@
 .gitignore
 Gopkg.*
 Makefile
-vendor
 Readme.md
 *.go
