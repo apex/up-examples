@@ -9,7 +9,7 @@ This will install the required dependencies and uses the [Go Dependency Manageme
 which you may need to install.
 
 ```
-$ deps ensure
+$ dep ensure
 ```
 
 ## Deploy
