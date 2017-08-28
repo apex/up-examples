@@ -8,7 +8,7 @@ This will install the required dependencies and uses the [Go Dependency Manageme
 which you may need to install.
 
 ```
-$ make deps
+$ deps ensure
 ```
 
 ## Run Locally
@@ -16,7 +16,7 @@ $ make deps
 You can also run this up locally using the following
 
 ```
-$ make build
+$ go build -o server ./...
 $ PORT=3000 ./server
 ```
 
@@ -25,5 +25,5 @@ $ PORT=3000 ./server
 This will deploy to default `AWS` profile.
 
 ```
-$ make deploy
+$ up
 ```
