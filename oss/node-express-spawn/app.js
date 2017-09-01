@@ -28,11 +28,11 @@ function spawnPgm(pgm, args, done) {
 
   let output = '';
   run.stdout.on('data', (data) => {
-    output += data + '\n';
+    output += data;
   });
 
   run.stderr.on('data', (data) => {
-    output += data + '\n';
+    output += data;
   });
 
   run.on('close', (code) => {
