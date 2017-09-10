@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "environment": {
+    "FOO": "foo",
+    "BAR": "bar"
+  }
+}
