@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "fastify": "^0.26.2"
+  }
+}
