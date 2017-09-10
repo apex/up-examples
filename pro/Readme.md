@@ -1,0 +1,1 @@
+- [node secrets](./node-secrets) – Environment variable management via encrypted secrets.
