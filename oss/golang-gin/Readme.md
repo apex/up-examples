@@ -20,7 +20,7 @@ $ up
 
 ## Notes
 
-Typically in .upignore you'd list specific files or directories to omit, however in cases such as Golang where you deploy a single binary, it may be simpler to whitelist all files, and blacklist the `./server` binary.
+Typically in .upignore you'd list specific files or directories to omit, however in cases such as Golang where you deploy a single binary, it may be simpler to blacklist all files, and whitelist the `./server` binary.
 
 ```
 *
