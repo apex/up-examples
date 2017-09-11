@@ -9,7 +9,7 @@
 - [golang basic memory](./golang-basic-memory) – Hello world with max Lambda memory/cpu.
 - [golang form](./golang-form) – Simple form processing.
 - [golang gin](./golang-gin) – Hello World using the Gin framework.
-- [golang slack](./golang-slack) – Slack command.
+- [golang slack](./golang-slack) – Slack command for timing a website response.
 - [golang uploads](./golang-uploads) – Simple multi-part form processing.
 - [java gradle spark](./java-gradle-spark) – Hello world.
 - [java gradle springboot](./java-gradle-springboot) – Hello world.
@@ -22,6 +22,7 @@
 - [node errors](./node-errors) – Default error pages.
 - [node express](./node-express) – Express application.
 - [node express browserify](./node-express-browserify) – Express application using a bundler to reduce require() time and build size.
+- [node express spawn](./node-express-spawn) – Fun server that let's you spawn commands on the host VM.
 - [node fastify](./node-fastify) – [Fastify](http://www.fastify.io/) application.
 - [node graphql](./node-graphql) – GraphQL server.
 - [node koa](./node-koa) – Koa website.
