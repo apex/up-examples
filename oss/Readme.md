@@ -2,7 +2,6 @@
 - [crystal site](./crystal-site) – Larger site.
 - [general dns](./general-dns) – DNS zones and record management.
 - [general ignorefiles](./general-ignorefiles) – Ignore file usage to omit files.
-- [general throttling](./general-throttling) – DNS zones and record management.
 - [golang api](./golang-api) – REST API example.
 - [golang basic](./golang-basic) – Hello world.
 - [golang basic auth](./golang-basic-auth) – Basic authentication example.
@@ -26,6 +25,7 @@
 - [node fastify](./node-fastify) – [Fastify](http://www.fastify.io/) application.
 - [node graphql](./node-graphql) – GraphQL server.
 - [node koa](./node-koa) – Koa website.
+- [node logging](./node-logging) – Logging example.
 - [node next](./node-next) – Next.js application.
 - [node noconfig](./node-noconfig) – Bare minimal example with zero config.
 - [node spa](./node-spa) – Single page app using React & Neutrino.
