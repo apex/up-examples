@@ -25,7 +25,7 @@
 - [node fastify](./node-fastify) – [Fastify](http://www.fastify.io/) application.
 - [node graphql](./node-graphql) – GraphQL server.
 - [node koa](./node-koa) – Koa website.
-- [node logging](./node-logging) – Logging example.
+- [node logging](./node-logging) – Logging example with plain-text and JSON logs.
 - [node next](./node-next) – Next.js application.
 - [node noconfig](./node-noconfig) – Bare minimal example with zero config.
 - [node spa](./node-spa) – Single page app using React & Neutrino.

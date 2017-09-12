@@ -1,7 +1,7 @@
 
 # Node Logging
 
-Logging example.
+Logging example with plain-text and JSON logs.
 
 ## Deploy
 
