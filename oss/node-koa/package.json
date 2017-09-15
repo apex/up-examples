@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "koa": "^2.2.0",
+    "koa-compress": "^2.0.0",
     "koa-static": "^3.0.0"
   },
   "scripts": {
