@@ -6,6 +6,7 @@
 - [golang basic](./golang-basic) – Hello world.
 - [golang basic auth](./golang-basic-auth) – Basic authentication example.
 - [golang basic memory](./golang-basic-memory) – Hello world with max Lambda memory/cpu.
+- [golang cookies](./golang-cookies) – Simple cookies example.
 - [golang form](./golang-form) – Simple form processing.
 - [golang gin](./golang-gin) – Hello World using the Gin framework.
 - [golang slack](./golang-slack) – Slack command for timing a website response.
