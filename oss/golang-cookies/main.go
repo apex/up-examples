@@ -15,11 +15,10 @@ func main() {
 	addr := ":" + os.Getenv("PORT")
 	s := pat.New()
 	s.Get("/", index)
-	s.Post("/", settings)
+	s.Post("/", submit)
 	log.Fatal(http.ListenAndServe(addr, s))
 }
 
-// GET / – index page.
 func index(w http.ResponseWriter, r *http.Request) {
 	name, _ := r.Cookie("name")
 
@@ -32,8 +31,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	})
 }
 
-// POST / – save the user settings.
-func settings(w http.ResponseWriter, r *http.Request) {
+func submit(w http.ResponseWriter, r *http.Request) {
 	name := r.FormValue("name")
 
 	http.SetCookie(w, &http.Cookie{
