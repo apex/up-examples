@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"bytes"
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -23,7 +24,17 @@ func main() {
 	println()
 	defer println()
 
+	dir := flag.String("dir", "", "Directory to test.")
+	flag.Parse()
+
 	log.SetHandler(cli.Default)
+
+	if *dir != "" {
+		if err := testExample(*dir); err != nil {
+			log.Fatalf("error: %s", err)
+		}
+		return
+	}
 
 	if err := testExamples("oss"); err != nil {
 		log.Fatalf("error: %s", err)

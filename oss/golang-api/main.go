@@ -49,7 +49,7 @@ func post(w http.ResponseWriter, r *http.Request) {
 	name := string(b)
 	pets[name] = struct{}{}
 	log.Printf("POST / %q", name)
-	fmt.Fprintf(w, "welcome to the family %q!\n", name)
+	fmt.Fprintf(w, "welcome to the family %s!\n", name)
 }
 
 // curl -X DELETE :3000/Tobi
@@ -58,4 +58,5 @@ func post(w http.ResponseWriter, r *http.Request) {
 func del(w http.ResponseWriter, r *http.Request) {
 	name := r.URL.Query().Get(":name")
 	delete(pets, name)
+	fmt.Fprintf(w, "removed %s!\n", name)
 }

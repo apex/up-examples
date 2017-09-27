@@ -14,6 +14,11 @@ test:
 	@sh test.sh
 .PHONY: test
 
+# Test with slow QA
+test.qa:
+	@go run test.go
+.PHONY: test.qa
+
 # Source LOC.
 cloc:
 	@cloc --exclude-dir=node_modules .
