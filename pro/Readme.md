@@ -1,2 +1,2 @@
 - [alerting](./alerting) – Define alerts and actions for error notifications.
-- [node secrets](./node-secrets) – Environment variable management via encrypted secrets.
+- [secrets](./secrets) – Environment variable management via encrypted secrets.
