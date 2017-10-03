@@ -29,7 +29,8 @@ function text(req, res) {
  */
 
 function json(req, res) {
-  log('info', 'performed a request', { method: req.method, path: req.url })
+  const { method, url, headers } = req
+  log('info', 'performed a request', { method, url, headers })
   res.end('Hello\n')
 }
 
