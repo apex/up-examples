@@ -3,7 +3,7 @@
 
 Environment variable management via encrypted secrets.
 
-## Setup
+## Deploy
 
 First define a few fake environment variables, they are encrypted by default,
 and contain anything you like, even JSON for example.
@@ -13,30 +13,38 @@ $ up env add MSG Hello
 $ up env add NAME Tobi
 ```
 
-By default env variables are scoped to _all_ stages, however any defined
-for a specific stage take precedence. Let's define one for production with the `-s` or `--stage` flag.
+List the env vars with:
 
 ```
-$ up env add MSG "Hello from production" -s production
+$ up env
 ```
 
-## Deploy
-
-Deploy development:
+Deploy the environments:
 
 ```
 $ up
-```
-
-Deploy production:
-
-```
+$ up deploy staging
 $ up deploy production
 ```
 
-View both:
+View them:
 
 ```
 $ up url -o
-$ up url production -o
+$ up url -o staging
+$ up url -o production
+```
+
+By default env variables are scoped to _all_ stages, so you'll see the same results. You may also define env vars scoped to a particular stage, using the `-s` or `--stage` flag:
+
+```
+$ up env add -o staging MSG NAME Loki
+$ up env add -o production MSG NAME Jane
+```
+
+Now restart by deploying again:
+
+```
+$ up deploy staging
+$ up deploy production
 ```
