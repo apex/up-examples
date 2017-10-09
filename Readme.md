@@ -7,6 +7,8 @@ Example applications, APIs, and sites for [Up](https://github.com/apex/up), orga
 - [Pro](pro) – commercial edition.
 - [Enterprise](enterprise) – commercial edition.
 
+For real-world open source example applications visit the [Wiki](https://github.com/apex/up/wiki#applications).
+
 ## Notes
 
 - Each example has a Readme.md with further details.
