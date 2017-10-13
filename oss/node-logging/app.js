@@ -64,6 +64,7 @@ function json(req, res) {
 
 function error(path) {
   return (req, res) => {
+    res.statusCode = 400
     log('warn', 'invalid path', { path })
     res.write(`Invalid path use the following:\n`)
     res.write('  - /text\n')
