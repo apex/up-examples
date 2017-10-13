@@ -5,11 +5,10 @@
     "clean": "rm server.jar"
   },
   "lambda": {
-    "memory": 1536,
-    "timeout": 30
+    "memory": 1536
   },
   "proxy": {
     "command": "java -jar server.jar --port=${PORT}",
-    "timeout": 15
+    "timeout": 25
   }
 }

@@ -30,6 +30,18 @@ format, allowing you to specify fields etc.
 $ curl `up url`/json
 ```
 
+The following end-point outputs a stack trace:
+
+```
+$ curl `up url`/stack
+```
+
+Or alternatively crash and output an error in the uncaughtException handler.
+
+```
+$ curl `up url`/crash
+```
+
 ## Notes
 
 Up supports indented logs, useful for cases such
