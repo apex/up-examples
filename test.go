@@ -107,7 +107,7 @@ func testExample(dir string) error {
 		// cmd.Stdout = io.MultiWriter(&stdout, os.Stdout)
 		// cmd.Stderr = io.MultiWriter(&stderr, os.Stderr)
 		if err := cmd.Run(); err != nil {
-			return errors.Wrap(err, "running command")
+			return errors.Wrapf(err, "running %q", line)
 		}
 	}
 
