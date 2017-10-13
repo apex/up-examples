@@ -24,7 +24,7 @@ function stack(req, res) {
   } catch (err) {
     console.error(err.stack)
   }
-  res.end()
+  res.end(':)\n')
 }
 
 /**
@@ -33,7 +33,7 @@ function stack(req, res) {
 
 function crash(req, res) {
   throw new Error('boom something exploded!')
-  res.end()
+  res.end(':)\n')
 }
 
 /**
@@ -45,7 +45,7 @@ function text(req, res) {
   for (let k in req.headers) {
     console.log('  - %s: %s', k, req.headers[k])
   }
-  res.end()
+  res.end(':)\n')
 }
 
 /**
@@ -55,7 +55,7 @@ function text(req, res) {
 function json(req, res) {
   const { method, url, headers } = req
   log('info', 'performed a request', { method, url, headers })
-  res.end()
+  res.end(':)\n')
 }
 
 /**
