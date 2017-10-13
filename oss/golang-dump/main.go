@@ -10,15 +10,14 @@ import (
 
 func main() {
 	addr := ":" + os.Getenv("PORT")
-	http.HandleFunc("/", echo)
+	http.HandleFunc("/", dump)
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
 
-func echo(w http.ResponseWriter, r *http.Request) {
+func dump(w http.ResponseWriter, r *http.Request) {
 	dump, err := httputil.DumpRequest(r, true)
 	if err != nil {
 		fmt.Fprintln(w, err.Error())
-		return
 	}
 
 	fmt.Fprintln(w, string(dump))
