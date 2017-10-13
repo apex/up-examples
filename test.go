@@ -54,7 +54,7 @@ func testExamples(dir string) error {
 
 		root := filepath.Join(dir, f.Name())
 		if err := testExample(root); err != nil {
-			return errors.Wrap(err, "testing")
+			return err
 		}
 	}
 
@@ -107,7 +107,7 @@ func testExample(dir string) error {
 		// cmd.Stdout = io.MultiWriter(&stdout, os.Stdout)
 		// cmd.Stderr = io.MultiWriter(&stderr, os.Stderr)
 		if err := cmd.Run(); err != nil {
-			return errors.Wrapf(err, "running %q", line)
+			return errors.Wrapf(err, stderr.String())
 		}
 	}
 
