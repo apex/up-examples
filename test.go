@@ -104,7 +104,6 @@ func testExample(dir string) error {
 		cmd := exec.Command("sh", "-c", line)
 		cmd.Stdout = &stdout
 		cmd.Stderr = &stderr
-		cmd.StdoutPipe()
 		// cmd.Stdout = io.MultiWriter(&stdout, os.Stdout)
 		// cmd.Stderr = io.MultiWriter(&stderr, os.Stderr)
 		if err := cmd.Run(); err != nil {
