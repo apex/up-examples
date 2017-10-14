@@ -145,6 +145,16 @@ func directive(name string, actual, expect string) {
 		return
 	}
 
+	if name == "not contains" {
+		fmt.Printf("--> test not contains %q\n", expect)
+		if strings.Contains(actual, expect) {
+			fmt.Printf("\n")
+			fmt.Printf("\033[31m  Expected to not contain:\n\n  %s\033[0m\n", expect)
+			fmt.Printf("\n\033[31m  Output:\n\n  %s\033[0m\n", actual)
+		}
+		return
+	}
+
 	panic(fmt.Sprintf("unsupported directive %q", name))
 }
 
