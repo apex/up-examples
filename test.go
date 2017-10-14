@@ -10,6 +10,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"strings"
+	"time"
 
 	"github.com/apex/log"
 	"github.com/apex/log/handlers/cli"
@@ -69,7 +70,12 @@ func testExample(dir string) error {
 		return nil
 	}
 
+	start := time.Now()
 	fmt.Printf("\033[;1m==> %s\033[0m\n", filepath.Base(dir))
+	defer func() {
+		fmt.Printf("-->\n")
+		fmt.Printf("\033[;1m==> ok (%s)\033[0m\n\n", time.Since(start))
+	}()
 
 	f, err := os.Open(test)
 	if err != nil {
@@ -118,8 +124,6 @@ func testExample(dir string) error {
 	if err := os.Chdir(filepath.Join("..", "..")); err != nil {
 		return errors.Wrap(err, "chdir")
 	}
-
-	fmt.Printf("\n")
 
 	return nil
 }
