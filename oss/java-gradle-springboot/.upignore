@@ -1,14 +1,3 @@
-.DS_Store
-.gradle
-gradle
-.idea
-build
-build.gradle
-src
-gradlew
-gradlew.bat
-*.iml
-up.json
-.upignore
-*.md
-up.json
+*
+!build.gradle
+!server.jar

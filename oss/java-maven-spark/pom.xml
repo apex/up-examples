@@ -9,11 +9,12 @@
     <version>1.0.0</version>
 
     <properties>
-        <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <maven.compile.source>1.8</maven.compile.source>
         <maven.target.source>1.8</maven.target.source>
-        <maven-shade-plugin.version>2.2</maven-shade-plugin.version>
-        <really-executable-jar-maven-plugin.version>1.5.0</really-executable-jar-maven-plugin.version>
+        <maven-shade-plugin.version>3.1.0</maven-shade-plugin.version>
         
         <slf4j.version>1.7.25</slf4j.version>
         <spark.version>2.6.0</spark.version>
@@ -53,11 +54,10 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
+                            <finalName>server</finalName>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifest-entries>
                                         <Main-Class>com.github.apex.up.examples.spark.Application</Main-Class>
                                         <X-Compile-Source-JDK>${maven.compile.source}</X-Compile-Source-JDK>
@@ -82,26 +82,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <!-- now make the jar chmod +x style executable -->
-            <plugin>
-                <groupId>org.skife.maven</groupId>
-                <artifactId>really-executable-jar-maven-plugin</artifactId>
-                <version>${really-executable-jar-maven-plugin.version}</version>
-                <configuration>
-                    <flags>-Xmx1G</flags>
-                    <programFile>server</programFile>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>really-executable-jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
         </plugins>
     </build>
 

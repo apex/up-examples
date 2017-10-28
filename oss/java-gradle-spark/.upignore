@@ -1,9 +1,4 @@
-.gradle
-build
-gradle
-src
-*.gradle
-gradlew
-gradlew.bat
-*.md
-up.json
+*
+!build.gradle
+!settings.gradle
+!server.jar

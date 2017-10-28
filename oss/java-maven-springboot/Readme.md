@@ -1,5 +1,5 @@
 
-# Java Gradle SpringBoot
+# Java Maven SpringBoot
 
 Hello world.
 

@@ -1,15 +1,6 @@
 {
-  "name": "app",
-  "hooks": {
-    "build": "./gradlew clean build && cp build/libs/springboot-demo-1.0.0.jar server.jar",
-    "clean": "rm server.jar"
-  },
+  "name": "java-gradle-springboot",
   "lambda": {
-    "memory": 1536,
-    "timeout": 30
-  },
-  "proxy": {
-    "command": "java -jar server.jar --port=${PORT}",
-    "timeout": 15
+    "memory": 1536
   }
 }
