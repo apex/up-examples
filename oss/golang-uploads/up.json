@@ -1,7 +1,6 @@
 {
   "name": "app",
   "lambda": {
-    "memory": 1024,
-    "timeout": 15
+    "memory": 1024
   }
 }

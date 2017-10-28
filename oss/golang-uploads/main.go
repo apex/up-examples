@@ -8,7 +8,8 @@ import (
 	"os"
 
 	"github.com/apex/log"
-	"github.com/apex/log/handlers/logfmt"
+	"github.com/apex/log/handlers/json"
+	"github.com/apex/log/handlers/text"
 	"github.com/dustin/go-humanize"
 )
 
@@ -18,8 +19,17 @@ var funcs = template.FuncMap{
 
 var views = template.Must(template.New("").Funcs(funcs).ParseGlob("views/*.html"))
 
+// use JSON logging when run by Up (including `up start`).
+func init() {
+	if os.Getenv("UP_STAGE") == "" {
+		log.SetHandler(text.Default)
+	} else {
+		log.SetHandler(json.Default)
+	}
+}
+
+// setup.
 func main() {
-	log.SetHandler(logfmt.New(os.Stdout))
 	addr := ":" + os.Getenv("PORT")
 	http.HandleFunc("/submit", submit)
 	http.HandleFunc("/", index)
@@ -28,11 +38,13 @@ func main() {
 	}
 }
 
+// index page.
 func index(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	views.ExecuteTemplate(w, "index.html", nil)
 }
 
+// submit hander.
 func submit(w http.ResponseWriter, r *http.Request) {
 	file, hdr, err := r.FormFile("image")
 	if err != nil {

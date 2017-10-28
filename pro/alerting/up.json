@@ -1,0 +1,31 @@
+{
+  "name": "app",
+  "proxy": {
+    "retry": false
+  },
+  "alerting": {
+    "actions": [
+      {
+        "name": "email.backend",
+        "type": "email",
+        "email": "ops@example.com"
+      }
+    ],
+    "alerts": [
+      {
+        "metric": "http.5xx",
+        "statistic": "sum",
+        "threshold": 5,
+        "period": "1m",
+        "action": "email.backend"
+      },
+      {
+        "metric": "http.4xx",
+        "statistic": "sum",
+        "threshold": 50,
+        "period": "5m",
+        "action": "email.backend"
+      }
+    ]
+  }
+}

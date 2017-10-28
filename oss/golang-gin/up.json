@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "regions": [
+    "ap-southeast-2"
+  ],
+  "lambda": {
+    "memory": 128
+  },
+  "hooks": {
+    "build": "GOOS=linux GOARCH=amd64 go build -o server cmd/api/main.go",
+    "clean": "rm server"
+  }
+}

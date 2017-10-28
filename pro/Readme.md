@@ -1,0 +1,2 @@
+- [alerting](./alerting) – Define alerts and actions for error notifications.
+- [secrets](./secrets) – Environment variable management via encrypted secrets.

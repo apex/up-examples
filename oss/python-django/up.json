@@ -1,0 +1,6 @@
+{
+  "name": "app",
+  "proxy": {
+    "command": "python app.py runserver 0.0.0.0:$PORT"
+  }
+}

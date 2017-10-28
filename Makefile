@@ -1,9 +1,4 @@
 
-# Test examples.
-test:
-	@sh test.sh
-.PHONY: test
-
 # Build index.
 build:
 	@echo "==> Building oss index"
@@ -13,6 +8,16 @@ build:
 	@echo "==> Building enterprise index"
 	@sh index.sh enterprise > enterprise/Readme.md
 .PHONY: build
+
+# Test examples.
+test:
+	@sh test.sh
+.PHONY: test
+
+# Test with slow QA
+test.qa:
+	@go run test.go
+.PHONY: test.qa
 
 # Source LOC.
 cloc:

@@ -6,13 +6,23 @@ import (
 	"os"
 
 	"github.com/apex/log"
-	"github.com/apex/log/handlers/logfmt"
+	"github.com/apex/log/handlers/json"
+	"github.com/apex/log/handlers/text"
 )
 
 var views = template.Must(template.ParseGlob("views/*.html"))
 
+// use JSON logging when run by Up (including `up start`).
+func init() {
+	if os.Getenv("UP_STAGE") == "" {
+		log.SetHandler(text.Default)
+	} else {
+		log.SetHandler(json.Default)
+	}
+}
+
+// setup.
 func main() {
-	log.SetHandler(logfmt.New(os.Stdout))
 	addr := ":" + os.Getenv("PORT")
 	http.HandleFunc("/submit", submit)
 	http.HandleFunc("/", index)
@@ -21,9 +31,12 @@ func main() {
 	}
 }
 
+// index page.
 func index(w http.ResponseWriter, r *http.Request) {
 	name := cookie(r, "name")
 	email := cookie(r, "email")
+
+	w.Header().Set("Content-Type", "text/html")
 
 	views.ExecuteTemplate(w, "index.html", struct {
 		Name  string
@@ -32,10 +45,9 @@ func index(w http.ResponseWriter, r *http.Request) {
 		Name:  name,
 		Email: email,
 	})
-
-	w.Header().Set("Content-Type", "text/html")
 }
 
+// submit handler.
 func submit(w http.ResponseWriter, r *http.Request) {
 	name := r.FormValue("name")
 	email := r.FormValue("email")
@@ -53,11 +65,13 @@ func submit(w http.ResponseWriter, r *http.Request) {
 	redirectBack(w, r)
 }
 
+// redirect to referrer helper.
 func redirectBack(w http.ResponseWriter, r *http.Request) {
 	url := r.Header.Get("Referer")
 	http.Redirect(w, r, url, http.StatusFound)
 }
 
+// cookie helper.
 func cookie(r *http.Request, name string) string {
 	c, err := r.Cookie(name)
 	if err != nil {
