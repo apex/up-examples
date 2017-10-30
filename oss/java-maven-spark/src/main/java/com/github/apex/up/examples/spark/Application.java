@@ -10,6 +10,6 @@ public class Application {
   public static void main(String[] args) {
     String port = ofNullable(getenv("PORT")).orElse("3000");
     port(parseInt(port));
-    get("/", (request, response) -> "hello world");
+    get("/", (request, response) -> "Hello World");
   }
 }
