@@ -5,7 +5,6 @@ Example applications, APIs, and sites for [Up](https://github.com/apex/up), orga
 
 - [OSS](oss) – open-source edition.
 - [Pro](pro) – commercial edition.
-- [Enterprise](enterprise) – commercial edition.
 
 For real-world open source example applications visit the [Wiki](https://github.com/apex/up/wiki#applications).
 
