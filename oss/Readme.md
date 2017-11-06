@@ -15,6 +15,7 @@
 - [java gradle spark](./java-gradle-spark) – Hello world.
 - [java gradle springboot](./java-gradle-springboot) – Hello world.
 - [java maven spark](./java-maven-spark) – Hello world.
+- [java maven springboot](./java-maven-springboot) – Hello world.
 - [node 8](./node-8) – Node 8 application using a binary.
 - [node basic](./node-basic) – Hello world.
 - [node basic memory](./node-basic-memory) – Hello world with max memory/cpu.
