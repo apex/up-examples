@@ -18,5 +18,5 @@ $ up
 ## Usage
 
 ```
-$ curl -v -d '{ "query": "{ pet(id: 0) { name }}" }' `up url`
+$ curl -d '{ "query": "{ pet(id: 0) { name }}" }' `up url`?pretty
 ```
