@@ -30,7 +30,8 @@
 - [node koa](./node-koa) – Koa website.
 - [node logging](./node-logging) – Logging example with plain-text and JSON logs.
 - [node next](./node-next) – Next.js application.
-- [node noconfig](./node-noconfig) – Bare minimal example with zero config.
+- [node nuxt](./node-nuxt) – Nuxt.js application.
+- [node parcel](./node-parcel) – 
 - [node spa](./node-spa) – Single page app using React & Neutrino.
 - [python basic](./python-basic) – Hello world.
 - [python bottle](./python-bottle) – A python app using the Bottle microframework.
