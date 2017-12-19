@@ -26,7 +26,8 @@ func main() {
 	defer println()
 
 	dir := flag.String("dir", "", "Directory to test.")
-	pro := flag.Bool("pro", false, "Test with pro version.")
+	oss := flag.Bool("oss", true, "Test oss examples.")
+	pro := flag.Bool("pro", false, "Test pro examples.")
 	flag.Parse()
 
 	log.SetHandler(cli.Default)
@@ -38,8 +39,10 @@ func main() {
 		return
 	}
 
-	if err := testExamples("oss"); err != nil {
-		log.Fatalf("error: %s", err)
+	if *oss {
+		if err := testExamples("oss"); err != nil {
+			log.Fatalf("error: %s", err)
+		}
 	}
 
 	if *pro {
