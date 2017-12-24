@@ -12,7 +12,7 @@
         "name": "blog.something.com",
         "type": "CNAME",
         "ttl": 300,
-        "value": ["34.209.172.67"]
+        "value": ["example.someblog.com"]
       },
       {
         "name": "api.something.com",
