@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "node lib"
+  },
+  "dependencies": {
+    "graphql-request": "^1.4.0",
+    "micro": "^9.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "fast-async": "^6.3.0"
+  }
+}

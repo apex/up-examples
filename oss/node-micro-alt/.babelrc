@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    ["fast-async", {
+      "compiler": {
+	    "noRuntime": true
+      }
+    }]
+  ]
+}
