@@ -36,7 +36,7 @@ The `proxy.command` script is run inside Lambda to start your server.
 
 We use our "custom" `node` binary (`node-v8.9.0-linux-x64`) to run the `micro` binary, specifying the host & port values.
 
-> **Note**: Micro's default `host` value is `::`, which is not compatible with Lambda; using `localhost` works, though!
+> **Note**: Micro's default `host` value is `::`, which is not compatible with Lambda; using `localhost` works, though! Also note that the micro(1) binary itself does literally nothing other than start your server, so node-micro-alt would be more idioimatic Node.js code.
 
 ```json
 {

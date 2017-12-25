@@ -29,7 +29,8 @@
 - [node graphql](./node-graphql) – GraphQL server.
 - [node koa](./node-koa) – Koa website.
 - [node logging](./node-logging) – Logging example with plain-text and JSON logs.
-- [node micro alt](./node-micro-alt) – Run a micro server programmatically with build step.
+- [node micro](./node-micro) – Run the [`micro`](https://github.com/zeit/micro) binary with a non-native Node v8.x runtime.
+- [node micro alt](./node-micro-alt) – Run the [`micro`](https://github.com/zeit/micro) programmatically.
 - [node next](./node-next) – Next.js application.
 - [node nuxt](./node-nuxt) – Nuxt.js application.
 - [node spa](./node-spa) – Single page app using React & Neutrino.

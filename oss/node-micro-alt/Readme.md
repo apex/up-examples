@@ -1,6 +1,6 @@
 # Node Micro
 
-Run a micro server programmatically with build step.
+Run the [`micro`](https://github.com/zeit/micro) programmatically.
 
 This makes us of `async`/`await` and demonstrates a GraphQL query (bonus).
 
