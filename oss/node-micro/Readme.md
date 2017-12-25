@@ -1,4 +1,4 @@
-# Micro with Node v8.x
+# Node Micro
 
 Run the [`micro`](https://github.com/zeit/micro) binary with a non-native Node v8.x runtime.
 

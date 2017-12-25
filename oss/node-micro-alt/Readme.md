@@ -1,4 +1,4 @@
-# Node Micro
+# Node Micro Idiomatic
 
 Run the [`micro`](https://github.com/zeit/micro) programmatically.
 
