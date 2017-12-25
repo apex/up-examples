@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "graphql-request": "^1.4.0",
+    "micro": "^9.0.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "hooks": {
+    "build": "make"
+  },
+  "proxy": {
+    "command": "./node-v8.9.0-linux-x64/bin/node node_modules/.bin/micro --host localhost --port $PORT"
+  },
+  "lambda": {
+    "memory": 1024
+  }
+}
