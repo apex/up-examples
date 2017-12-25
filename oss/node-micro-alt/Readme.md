@@ -1,6 +1,6 @@
 # Node Micro
 
-Run a micr server programmatically with build step.
+Run a micro server programmatically with build step.
 
 This makes us of `async`/`await` and demonstrates a GraphQL query (bonus).
 
