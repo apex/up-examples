@@ -1,8 +1,6 @@
-# Micro with Node v8.x
+# Node Micro
 
-Run a [`micro`](https://github.com/zeit/micro) server programmatically with a build step for Node v6.x compatibility.
-
-> This example builds upon the [`node-8` example](https://github.com/apex/up-examples/blob/master/oss/node-8).
+Run a micr server programmatically with build step.
 
 This makes us of `async`/`await` and demonstrates a GraphQL query (bonus).
 
