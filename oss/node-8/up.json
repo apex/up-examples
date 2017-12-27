@@ -4,7 +4,7 @@
     "build": "make"
   },
   "proxy": {
-    "command": "./node-v8.4.0-linux-x64/bin/node app.js"
+    "command": "./node-v8.9.3-linux-x64/bin/node app.js"
   },
   "lambda": {
     "memory": 1024
