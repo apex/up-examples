@@ -7,7 +7,8 @@ const { PORT = 3000 } = process.env
 
 http.createServer((req, res) => {
   const stage = process.env.UP_STAGE
+  const env = process.env.NODE_ENV
   const msg = process.env.MSG
   const name = process.env.NAME
-  res.end(`${msg} ${name} from ${stage}\n`)
+  res.end(`${msg} ${name} from ${stage} (NODE_ENV=${env})\n`)
 }).listen(PORT)
