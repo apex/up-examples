@@ -33,6 +33,7 @@
 - [node micro alt](./node-micro-alt) – Run the [`micro`](https://github.com/zeit/micro) programmatically.
 - [node next](./node-next) – Next.js application.
 - [node nuxt](./node-nuxt) – Nuxt.js application.
+- [node redirect](./node-redirect) – Tiny redirect app.
 - [node spa](./node-spa) – Single page app using React & Neutrino.
 - [python basic](./python-basic) – Hello world.
 - [python bottle](./python-bottle) – A python app using the Bottle microframework.

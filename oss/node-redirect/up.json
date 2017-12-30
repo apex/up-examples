@@ -1,0 +1,8 @@
+{
+  "name": "app",
+  "stages": {
+    "production": {
+      "domain": "www.example.com"
+    }
+  }
+}
