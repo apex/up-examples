@@ -1,3 +1,4 @@
+- [clojure basic](./clojure-basic) – Hello world.
 - [crystal basic](./crystal-basic) – Hello world.
 - [crystal site](./crystal-site) – Larger site.
 - [general dns](./general-dns) – DNS zones and record management.
