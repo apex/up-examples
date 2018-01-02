@@ -11,5 +11,4 @@ $ up
 
 ## Notes
 
-The default error page is only used if explicitly enabled in `up.json`.
-
+Run locally with `up start` and run `up url -o` to open the page, and refesh a bunch!
