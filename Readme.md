@@ -15,4 +15,9 @@ For real-world open source example applications visit the [Wiki](https://github.
 - For the best latency & cold start time set `.lambda.memory` in up.json to 1536
 - All examples use the `.name` "app" so you don't have to provision the stack each time
 
+## Running Tests
+
+The test suite is used for QA testing, however if you're adding an example you may add a `test.sh`
+and test it directly with `go run test.go -dir oss/someexample`.
+
 <a href="https://apex.sh"><img src="http://tjholowaychuk.com:6000/svg/sponsor"></a>
