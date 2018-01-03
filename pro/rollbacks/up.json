@@ -1,0 +1,47 @@
+{
+  "name": "app",
+  "actions": [
+    {
+      "name": "email.backend",
+      "type": "email",
+      "emails": ["tj@apex.sh"]
+    }
+  ],
+  "alerts": [
+    {
+      "metric": "http.count",
+      "statistic": "sum",
+      "threshold": 100,
+      "action": "email.backend"
+    },
+    {
+      "metric": "http.5xx",
+      "statistic": "sum",
+      "threshold": 1,
+      "period": "1m",
+      "action": "email.backend"
+    },
+    {
+      "metric": "http.4xx",
+      "statistic": "sum",
+      "threshold": 50,
+      "period": "5m",
+      "action": "email.backend"
+    },
+    {
+      "metric": "http.latency",
+      "statistic": "avg",
+      "threshold": 1000,
+      "period": "5m",
+      "action": "email.backend"
+    },
+    {
+      "namespace": "AWS/ApiGateway",
+      "metric": "Count",
+      "statistic": "sum",
+      "threshold": 500,
+      "action": "email.backend",
+      "description": "Note how you can use AWS namespaces and metrics directly if necessary."
+    }
+  ]
+}
