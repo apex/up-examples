@@ -7,4 +7,4 @@ curl -s `up url`/style.css
 # contains: Helvetica
 
 curl -s `up url`/../super-secret.txt
-# contains: 404 page not found
+# contains: <title>Not Found – 404</title>
