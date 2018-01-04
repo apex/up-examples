@@ -36,6 +36,4 @@ $ curl -s `up url production`
 
 ## Notes
 
-This example illustrates how environment variables are available at build time,
-so you may use `UP_STAGE`, `NODE_ENV` which is implied, or any custom env vars
-mapped to stages via `up env` to alter your builds on these values.
+This example illustrates how environment variables are available at build time, so you may utilize vars mapped to the stage you are deploying to alter configuration, client-side builds, and so on. Note that `UP_STAGE` and `NODE_ENV` by default will be the target stage name (`development`, `staging`, `production`).
