@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "type": "static",
+  "static": {
+    "dir": "dist"
+  },
+  "hooks": {
+    "build": [
+      "cp -fr public dist",
+      "sed -i . 's|{STAGE}|'$UP_STAGE'|g' dist/index.html",
+      "sed -i . 's|{NAME}|'$NAME'|g' dist/index.html"
+    ],
+    "clean": "rm -fr dist"
+  }
+}

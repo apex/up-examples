@@ -1,2 +1,4 @@
 - [alerting](./alerting) – Define alerts and actions for error notifications.
-- [secrets](./secrets) – Environment variable management via encrypted secrets.
+- [env](./env) – Environment variable management via encrypted secrets mapped to stages.
+- [env static](./env-static) – Environment variable availability during hooks.
+- [rollbacks](./rollbacks) – Rollback to a previous production release.

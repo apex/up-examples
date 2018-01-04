@@ -1,7 +1,7 @@
 
-# Node Secrets
+# Environment Variables
 
-Environment variable management via encrypted secrets.
+Environment variable management via encrypted secrets mapped to stages.
 
 ## Deploy
 
