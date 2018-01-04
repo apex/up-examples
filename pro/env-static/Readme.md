@@ -10,7 +10,7 @@ Map the `NAME` environment variable to different names, based on the stage.
 ```
 $ up env set NAME Tobi
 $ up env set -s staging NAME Loki
-u$ p env set -s production NAME Jane
+$ up env set -s production NAME Jane
 ```
 
 Deploy each stage:
