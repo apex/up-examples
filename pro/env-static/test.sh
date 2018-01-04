@@ -1,4 +1,3 @@
-up env set MSG Hello
 up env set NAME Tobi
 up env set -s staging NAME Loki
 up env set -s production NAME Jane
