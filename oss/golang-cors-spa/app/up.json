@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "type": "static",
+  "hooks": {
+    "build": "parcel build index.html -d build --public-url .",
+    "clean": "rm -fr build"
+  },
+  "redirects": {
+    "/*": {
+      "location": "/",
+      "status": 200
+    }
+  },
+  "static": {
+    "dir": "build"
+  }
+}

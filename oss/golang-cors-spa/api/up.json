@@ -1,0 +1,6 @@
+{
+  "name": "api",
+  "cors": {
+    "enable": true
+  }
+}
