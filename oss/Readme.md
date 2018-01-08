@@ -41,6 +41,7 @@
 - [python bottle](./python-bottle) – A python app using the Bottle microframework.
 - [python django](./python-django) – A simple python example using the Django web framework.
 - [python flask](./python-flask) – A simple python example using the Flask microframework.
+- [stage overrides](./stage-overrides) – Stage configuration overrides.
 - [static basic](./static-basic) – Basic static site.
 - [static dir](./static-dir) – Basic static site with custom root directory.
 - [static error pages](./static-error-pages) – Custom error pages.

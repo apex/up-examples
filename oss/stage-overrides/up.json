@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "lambda": {
+    "memory": 128
+  },
+  "stages": {
+    "production": {
+      "lambda": {
+        "memory": 1024
+      }
+    }
+  }
+}
