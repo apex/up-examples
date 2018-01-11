@@ -13,6 +13,7 @@
 - [golang form](./golang-form) – Simple form processing.
 - [golang gin](./golang-gin) – Hello World using the Gin framework.
 - [golang slack](./golang-slack) – Slack command for timing a website response.
+- [golang todo](./golang-todo) – Golang traditional server-side todo list.
 - [golang uploads](./golang-uploads) – Simple multi-part form processing.
 - [java gradle spark](./java-gradle-spark) – Hello world.
 - [java gradle springboot](./java-gradle-springboot) – Hello world.
