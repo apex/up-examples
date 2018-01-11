@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <ul>
+      {{#Items}}
+        <li>{{.}}</li>
+      {{/Items}}
+    </ul>
+    <form action="submit" method="post">
+      <input type="text" name="item" />
+      <input type="submit" value="Add Item" />
+    </form>
+  </body>
+</html>
