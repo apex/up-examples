@@ -31,9 +31,9 @@ The `proxy.command` script is run inside Lambda to start your server. You can th
 ```json
 {
   "proxy": {
-    "command": "./node-v8.9.3-linux-x64/bin/node app.js"
+    "command": "./node-v8.9.4-linux-x64/bin/node app.js"
   }
 }
 ```
 
-Also note that `./node-v8.9.3-linux-x64` is placed in .gitignore so it's not checked into GIT. Up will ignore these by default, so we negate it with `!node-v8.9.3-linux-x64` in .upignore.
+Also note that `./node-v8.9.4-linux-x64` is placed in .gitignore so it's not checked into GIT. Up will ignore these by default, so we negate it with `!node-v8.9.4-linux-x64` in .upignore.
