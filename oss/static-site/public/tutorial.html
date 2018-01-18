@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>io tutorial</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="home.css">
+		<link rel="stylesheet" href="home_header.css">
+		<style>
+		
+		.section {
+		    font-weight: 600;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		    border-top: solid 1px #444;
+		}
+		
+		.code {
+		    font-weight: 300;
+		    white-space: pre-line;
+		    margin-left: 30px;
+		    line-height: 22px;
+		    margin-bottom: 40px;
+		    font-weight: 500;
+		    color: #ddd;
+		    max-width: 600px;
+		    white-space: pre-wrap;
+		}
+		
+		.text {
+		   	animation: fadein 2s;
+		    max-width: 600px;
+        }
+		
+		.result {
+		    display: inline-block;
+		    color: #99c;
+		    margin: 0px;
+		    padding: 0px;
+		    white-space: pre-wrap;
+		}
+		
+		.result::before {
+		    content: '→ ';
+		}
+		
+        @media only screen and (max-width: 475px) {
+		    .code {
+		        font-size: 14px;
+		        margin-left: 0px;
+	        }	        
+        }
+		</style>
+	</head>
+	<body>
+		<div class="container leftSpace">
+    		    <div class="header">
+                	<div class="pageHeader">
+    			        <div class="topSpace"></div>
+    					<div class="pageTitle"><a href="index.html">Io</a></div>
+    					<div class="pageSubtitle"> / tutorial </div>
+    			    </div>
+    			</div>
+
+				<div class="text" style="padding-top: 40px;">
+                    
+<div class=section>Math</div>
+<div class="code">
+1+1
+<div class="result">2</div>
+
+2 sqrt
+<div class="result">1.414214</div>
+</div>
+
+<div class=section>Variables</div>
+<div class="code">
+a := 1
+<div class="result">1</div>
+
+a
+<div class="result">1</div>
+
+b := 2 * 3
+<div class="result">6</div>
+
+a + b
+<div class="result">7</div>
+</div>
+
+<div class=section>Conditions</div>
+<div class=code>
+a := 2
+
+(a == 1) ifTrue("a is one" println) ifFalse("a is not one" println)
+<div class="result">a is not one</div>
+
+if(a == 1, writeln("a is one"), writeln("a is not one"))
+<div class="result">a is not one</div>
+
+</div>
+<div class=section>Lists</div>
+<div class=code>
+d := List clone append(30, 10, 5, 20)    
+<div class="result">list(30, 10, 5, 20)</div>
+
+d size
+<div class="result">4</div>
+
+d print
+<div class="result">list(30, 10, 5, 20)</div>
+
+d := d sort
+<div class="result">list(5, 10, 20, 30)</div>
+
+d first
+<div class="result">5</div>
+
+d last
+<div class="result">30</div>
+
+d at(2)
+<div class="result">20</div>
+
+d remove(30)
+<div class="result">list(5, 10, 20)</div>
+
+d atPut(1, 123)
+<div class="result">list(5, 123, 20)</div>
+
+list(30, 10, 5, 20) select(>10)
+<div class="result">list(30, 20)</div>
+
+list(30, 10, 5, 20) detect(>10)
+<div class="result">30</div>
+
+list(30, 10, 5, 20) map(*2)
+<div class="result">list(60, 20, 10, 40)</div>
+
+list(30, 10, 5, 20) map(v, v*2)
+<div class="result">list(60, 20, 10, 40)</div>
+</div>
+
+<div class=section>Loops</div>
+<div class=code>
+for(i, 1, 10, write(i, " "))
+<div class="result">1 2 3 4 5 6 7 8 9 10</div> 
+
+d foreach(i, v, writeln(i, ": ", v))
+<div class="result">0: 5
+1: 123
+3: 20</div>
+
+list("abc", "def", "ghi") foreach(println)
+<div class="result">abc
+def
+ghi</div>
+
+</div>
+
+<div class=section>Dictionaries</div>
+<div class=code>
+dict := Map clone    
+dict atPut("hello", "a greeting")   
+dict atPut("goodbye", "a parting")   
+dict hasKey("hello")   
+<div class="result">true</div>
+
+dict hasValue("a greeting")   
+<div class="result">true</div>
+
+dict at("hello")   
+<div class="result">a greeting</div>
+
+dict keys  
+<div class="result">list("hello", "goodbye")</div>
+
+dict foreach(k, v, (k .. ":" .. v) println)
+<div class="result">hello: a greeting
+goodbye: a parting</div>
+
+</div>
+
+<div class=section>Strings</div>
+<div class=code>
+a := "foo"
+<div class="result">"foo"</div>
+
+b := "bar"
+<div class="result">"bar"</div>
+
+c := a .. b
+<div class="result">"foobar"</div>
+
+c at(0)
+<div class="result">102</div>
+
+c at(0) asCharacter
+<div class="result">"f"</div>
+
+s := "this is a test"
+<div class="result">"this is a test"</div>
+
+words := s split(" ", "\t") print
+<div class="result">"this", "is", "a", "test"</div>
+
+s findSeq("is")
+<div class="result">2</div>
+
+s findSeq("test")
+<div class="result">10</div>
+
+s slice(10)
+<div class="result">"test"</div>
+
+s slice(2, 10)
+<div class="result">"is is a "</div>
+
+</div>
+
+<div class=section>Objects</div>
+<div class=code>
+Contact := Object clone
+<div class="result"> Contact_0x7fad4365a640:
+    type = "Contact"</div>
+
+Contact type
+<div class="result">Contact</div>
+
+Contact proto type
+<div class="result">Object</div>
+
+Contact name ::= nil
+<div class="result">nil</div>
+
+Contact address ::= nil
+<div class="result">nil</div>
+
+Contact city ::= nil
+<div class="result">nil</div>
+
+holmes := Contact clone setName("Holmes") setAddress("221B Baker St") setCity("London")
+<div class="result">Contact_0x7fad4365a640
+    type = "Contact"
+    name = "Holmes"
+    address = "221B Baker St"
+    city = "London"</div>
+
+holmes slotNames
+<div class="result">list("type", "name", "address", "city")</div>
+
+Contact fullAddress := method(list(name, address, city) join("\n"))
+<div class="result">method(
+  list(name, address, city) join("\n")
+)</div>
+
+holmes fullAddress
+<div class="result">"Holmes
+221B Baker St
+London"</div>
+
+holmes getSlot("fullAddress")
+<div class="result">method(
+  list(name, address, city) join("\n")
+)</div>
+</div>
+
+<div class=section>Defining Objects with the do() method</div>
+<div class=code>
+Contact := Object clone do(
+	name ::= nil
+	address ::= nil
+	city ::= nil
+	fullAddress := method(list(name, address, city) join("\n"))
+)
+</div>
+
+<div class=section>Inheritance</div>
+<div class=code>
+BusinessContact := Contact clone do(
+	companyName ::= ""
+	fullAddress := method(
+		list(companyName, "Care of: " .. name, address, city) join("\n")
+	)
+)
+
+steve := BusinessContact clone do(
+	setName("Steve") 
+	setCompanyName("Apple Inc.") 
+	setAddress("1 Infinite Loop")
+	setCity("Cupertino")
+)
+
+steve fullAddress
+<div class="result">
+   Apple Inc.
+   Care of: Steve Jobs
+   1 Infinite Loop
+   Cupertino
+</div>
+
+</div>
+
+<div class=section>Lazy Evaluation</div>
+<div class=code>
+assert := method(
+	call sender doMessage(call message argAt(0)) ifFalse(
+		Exception raise("failed assertion: " .. call message asString)
+	)
+)
+
+assert(1 == 3)
+
+<div class="result">
+  Exception: failed assertion: assert(1 ==(3))
+  ---------
+  Exception raise                      Command Line 1
+  Object assert                        Command Line 1
+</div>
+
+</div>
+
+
+<div class=section>Introspection</div>
+<div class=code>
+	Address := Object clone do(
+		fields ::= list("name", "street", "city", "state", "zipCode")
+
+		init := method(
+			fields foreach(key, 
+				if (self hasSlot(key) not,
+					self newSlot(key, nil)
+				) 
+			)
+		)
+
+		emptyFields := method(
+			fields select(k, self getSlot(k) == nil)
+		)
+
+		isValid := method(errors size == 0)
+
+		assertValid := method(
+			if (emptyFields size, 
+				Exception raise(
+				   self type .. " missing: " .. emptyFields join(", ")
+				)
+			)
+		)
+	)
+
+	anAddress := Address clone setName("Alan") setStreet("6502 Mem Ln")
+
+	anAddress assertValid
+
+<div class="result">
+  Exception: Address missing: city, state, zipCode
+  ---------
+  Exception raise                      test.io 19
+  Address assertValid                  test.io 25
+  CLI doFile                           Z_CLI.io 140
+  CLI run                              IoState_runCLI() 1
+</div>
+</div>
+
+
+<div class=section>Exceptions</div>
+<div class=code>
+e := try(
+    anAddress assertValid
+)
+
+e catch(Exception,
+    writeln("Caught: ", e error, "\nstack:\n", e coroutine backTraceString)
+)
+
+<div class="result">
+	Caught: Address missing: state, zipCode
+	stack:
+
+	  Exception: Address missing: state, zipCode
+	  ---------
+	  Exception raise                      test.io 19
+	  Address assertValid                  test.io 28
+</div>
+</div>
+
+
+
+<div class=section>Namespace</div>
+<div class=code>
+Lobby slotNames
+<div class="result">list(set_, Protos, Lobby, _, exit, forward)</div>
+  
+Lobby Protos slotNames
+<div class="result">list(Core, Addons)</div>
+
+Lobby protos Core slotNames
+<div class="result">list(Duration, Number, Eol, Coroutine, Sequence, DynLib, Normal, Notifier, ImmutableSequence, Collector, Debugger, Directory, CFunction, Block, vector, WeakLink, nil, false, CLI, Compiler, RunnerMixIn, Continue, File, TestSuite, Future, DirectoryCollector, Scheduler, UnitTest, FileCollector, FutureProxy, Date, true, Map, Break, List, AddonLoader, Call, String, Sandbox, Importer, Exception, DummyLine, Locals, Error, TestRunner, Profiler, Object, System, Path, Addon, SerializationStream, Return, OperatorTable, Vector, Message)</div>
+
+Lobby protos Core Date slotNames
+<div class="result">list(zone, -=, month, fromNumber, asSerialization, secondsToRun, +, print, isValidTime, setGmtOffset, fromSerialization, fromString, setDay, now, asJson, clock, timeStampString, setToUTC, asNumberString, setSecond, second, minute, format, year, convertToLocal, today, -, setYear, setMinute, hour, +=, asString, asAtomDate, secondsSinceNow, isDaylightSavingsTime, justSerialized, secondsSince, isDST, cpuSecondsToRun, gmtOffsetSeconds, asNumber, copy, isPast, gmtOffset, setHour, isToday, convertToUTC, convertToZone, setMonth, day)</div>
+
+</div>
+
+
+<div class=section>Code as data</div>
+<div class=code>
+m := method(a(b) + c)
+<div class="result"> method(
+   a(b) + c
+)</div>
+
+getSlot("m") message
+<div class="result"> a(b) +(c)</div>
+
+getSlot("m") message next
+<div class="result"> +(c)</div>
+
+getSlot("m") message name
+<div class="result"> a</div>
+
+getSlot("m") message setName("foo")
+<div class="result"> foo(b) +(c)</div>
+
+getSlot("m") message name
+<div class="result"> foo</div>
+
+getSlot("m") message arguments
+<div class="result"> list(b)</div>
+
+Message slotNames
+<div class="result"> list(name, lastBeforeEndOfLine, removeCachedResult, union, fromString, asMessageWithEvaluatedArgs, appendArg, argAt, argCount, clone, setCharacterNumber, isEndOfLine, label, code, setLineNumber, lineNumber, codeOfLength, doInContext, cachedResult, previous, asStackEntry, setLabel, setArguments, appendCachedArg, setCachedResult, asString, arguments, hasCachedResult, description, nextIgnoreEndOfLines, last, setName, setNext, opShuffle, asSimpleString, OperatorTable, argsEvaluatedIn, next, opShuffleC, characterNumber)
+</div>
+<!--
+Collector allObjects size
+<div class="result">12425</div>
+
+Message flattenedAST := method(
+  list(next ?flattenedAST, arguments map(flattenedAST)) flatten
+)
+
+astElementCount := Collector allObjects select(type == "Block") map(message flattenedAST size) sum
+<div class="result">3733</div>
+-->
+</div>
+
+
+
+
+<br><br><br>
+                </div>
+		</div>
+	</body>
+</html>

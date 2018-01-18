@@ -1,0 +1,148 @@
+body, td {
+	background: #191919;
+    font-family: 'Open Sans', "Helvetica Neue", Sans;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+}
+
+b {
+    font-weight: 600;
+}
+
+body a {
+    text-decoration: none;
+    color: #999;
+    font-weight: normal;
+}
+
+/* --- */
+
+pre {
+    font-family: 'Open Sans', "Helvetica Neue", Sans;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    margin-left: 30px;
+}
+
+.category {
+    width: 100%;
+    font-size: 0px;
+    color: #bbb;
+    font-weight: 600;
+}
+
+.categoryName {
+    height: 0px;
+    font-size: 0px;
+}
+
+.package {
+    font-size: 0px;
+    color: #999;
+    font-weight: 600;
+}
+
+.packageName {
+    height: 0px;
+    font-size: 0px;
+}
+
+.class {
+    background: #fff;
+    font-size: 24px;
+    color: #000; 
+    font-weight: 600;
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+    border-top: 10px solid #eee;
+}
+
+.className {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.classDescription {
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 60px;    
+    max-width: 500px;
+}
+
+.slot {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.slotName {
+    word-wrap: break-word;
+    color: #000; 
+    font-weight: 600;
+}
+
+.slotValue {
+    word-wrap: break-word;
+    color: #000; 
+    font-weight: 300;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+
+
+
+@media only screen and (max-width: 885px) {
+    
+    .class {
+        padding-left: 30px;
+    }
+
+    .className {
+        margin-top: 30px;
+    }
+    
+    .classDescription {
+        margin-left: 0px;
+    }
+    
+    pre {
+        margin-left: 0px;
+    }
+
+    .slot {
+        margin-left: 0px;
+    }
+}
+
+/*
+@media only screen and (max-width: 720px) {
+}
+
+@media only screen and (max-width: 585px) {
+}
+*/
+
+@media only screen and (max-width: 475px) {
+
+    .class {
+        padding-left: 30px;
+    }
+
+    .className {
+        margin-top: 30px;
+    }
+
+    .slot {
+        margin-left: 0px;
+    }
+}

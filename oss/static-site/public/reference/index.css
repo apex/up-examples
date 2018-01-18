@@ -1,0 +1,198 @@
+
+.index {
+	animation: fadein 2s;
+    display: block; 
+
+    	
+    width: 100%;
+	background-color: #191919;
+	
+	padding-top: 50px;
+	padding-bottom: 25px;
+	/*
+	padding-left: 100px;
+	padding-bottom: 50px;
+    margin-top: -1px;
+    margin-bottom: 0px;
+    */
+}
+
+.indexColumns {
+}
+
+.categoryIndex {
+    width: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-top: 1px solid #333;
+}
+
+.categoryIndexName {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 19px;
+}
+
+.categoryIndexName a {
+    all: inherit;
+}
+
+.categoryItems {
+    column-count: 4;
+}
+
+
+.packageIndex {
+    display: inline-block;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.packageIndexName {
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-bottom: 4px;
+}
+
+.packageItems {
+    
+}
+
+.classIndex {
+    display: inline-block;
+    margin-top: -1px;
+    width: 200px;
+    font-size: 14px;
+    transition: .15s;
+}
+
+.classIndex:hover {
+    color: #ccc;
+    background-color: #3a3a3a;
+}
+        
+.classIndexName {
+    display: block;
+    color: #aaa;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.classIndexComment {
+    display: inline-block;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 15px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+
+@media only screen and (max-width: 885px) {
+    .categoryIndex {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+
+/*
+    .categoryItems {
+        column-count: 1;
+    }
+    */
+    
+    .index {
+    	padding-top: 20px;
+    	padding-bottom: 100px;
+    }
+
+    .indexColumns {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+  .categoryItems {
+        column-count: 3;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+  .categoryItems {
+        column-count: 2;
+    }
+}
+
+/*
+@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 385px) {
+*/
+
+@media only screen and (max-width: 475px) {
+    
+    .index {
+    	padding-top: 0px;
+    	padding-bottom: 0px;
+    }
+    
+    .categoryIndex {
+        width: 80%;
+        border-top: 2px solid #444;
+    }
+
+    .categoryItems {
+        column-count: 1;
+    }
+
+    .indexColumns {
+        width: 100%;
+    }
+    
+    .packageIndex {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .classIndex {
+        width: 100%;
+    }
+
+    .categoryIndexName {
+        font-size: 32px;
+        line-height: 32px;
+    }    
+    
+    .packageIndexName {
+        font-size: 20px;
+        line-height: 30px;
+    }
+        
+    .classIndexName {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .class {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .className {
+        margin-top: 30px;
+    }
+}

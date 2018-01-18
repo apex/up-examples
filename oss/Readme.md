@@ -52,3 +52,4 @@
 - [static inject](./static-inject) – Script and style injection example, configured in JSON.
 - [static photos](./static-photos) – Simple static photo gallery.
 - [static rewrite](./static-rewrite) – Rewrites and redirection.
+- [static site](./static-site) – Full static website.
