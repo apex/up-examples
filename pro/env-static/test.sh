@@ -2,9 +2,9 @@ up env set NAME Tobi
 up env set -s staging NAME Loki
 up env set -s production NAME Jane
 
-up production
-up staging
 up
+up staging
+up production
 
 curl -s `up url`
 # contains: Hello Tobi from development
