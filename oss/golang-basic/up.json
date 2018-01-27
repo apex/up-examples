@@ -1,3 +1,10 @@
 {
-  "name": "app"
+  "name": "app",
+  "stages": {
+    "development": {
+      "proxy": {
+        "command": "gin --port $PORT"
+      }
+    }
+  }
 }
