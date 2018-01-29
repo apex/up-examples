@@ -1,0 +1,6 @@
+{
+  "name": "app",
+  "proxy": {
+    "command": "python34 app.py"
+  }
+}

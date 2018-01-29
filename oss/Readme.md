@@ -40,6 +40,7 @@
 - [node nuxt](./node-nuxt) – Nuxt.js application.
 - [node redirect](./node-redirect) – Tiny redirect app.
 - [node spa](./node-spa) – Single page app using React & Neutrino.
+- [python 3.4](./python-3.4) – Hello world using Python `3.4.3`.
 - [python basic](./python-basic) – Hello world.
 - [python bottle](./python-bottle) – A python app using the Bottle microframework.
 - [python django](./python-django) – A simple python example using the Django web framework.
