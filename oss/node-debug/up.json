@@ -1,0 +1,9 @@
+{
+  "name": "app",
+  "environment": {
+    "DEBUG": "myapp"
+  },
+  "logs": {
+    "stderr": "info"
+  }
+}
