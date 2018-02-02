@@ -23,15 +23,13 @@ Deploy the environments:
 
 ```
 $ up
-$ up deploy staging
-$ up deploy production
+$ up production
 ```
 
 View them:
 
 ```
 $ up url -o
-$ up url -o staging
 $ up url -o production
 ```
 
@@ -45,6 +43,6 @@ $ up env add -s production MSG NAME Jane
 Now restart by deploying again:
 
 ```
-$ up deploy staging
-$ up deploy production
+$ up 
+$ up production
 ```

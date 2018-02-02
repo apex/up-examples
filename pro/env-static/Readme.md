@@ -16,18 +16,14 @@ $ up env set -s production NAME Jane
 Deploy each stage:
 
 ```
-$ up production
-$ up staging
 $ up
+$ up production
 ```
 
 View each response:
 
 ```
 $ curl -s `up url`
-# contains: Hello Tobi from development
-
-$ curl -s `up url staging`
 # contains: Hello Loki from staging
 
 $ curl -s `up url production`
@@ -36,4 +32,4 @@ $ curl -s `up url production`
 
 ## Notes
 
-This example illustrates how environment variables are available at build time, so you may utilize vars mapped to the stage you are deploying to alter configuration, client-side builds, and so on. Note that `UP_STAGE` and `NODE_ENV` by default will be the target stage name (`development`, `staging`, `production`).
+This example illustrates how environment variables are available at build time, so you may utilize vars mapped to the stage you are deploying to alter configuration, client-side builds, and so on. Note that `UP_STAGE` and `NODE_ENV` by default will be the target stage name (`staging`, `production`).

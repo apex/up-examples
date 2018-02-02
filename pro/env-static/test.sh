@@ -3,7 +3,6 @@ up env set -s staging NAME Loki
 up env set -s production NAME Jane
 
 up
-up staging
 up production
 
 curl -s `up url`
