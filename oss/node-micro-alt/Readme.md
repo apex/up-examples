@@ -21,5 +21,3 @@ $ up
 ## Notes
 
 We use the [`fast-async`](https://github.com/MatAtBread/fast-async) Babel plugin (based on [`nodent`](https://github.com/MatAtBread/nodent)) to compile away the `async` & `await` syntax into Promises. This is because Lambda supports Node v6.x (LTS), which does not support the syntax directly.
-
-Lastly, the compiled output (`lib` directory) is excluded from version control (via `.gitignore`) but is re-included to the Up instance (via `.upignore`).

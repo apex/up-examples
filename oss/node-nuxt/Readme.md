@@ -19,4 +19,4 @@ $ up
 
 ## Notes
 
-The `.upignore` file contains `!.nuxt` to include the `./.nuxt` build directory. This is necessary because `.gitignore`'d files and dotfiles (or dirs) are ignored by default.
+The `.upignore` file contains `!.nuxt` to include the `./.nuxt` build directory. This is necessary because dotfiles (or dirs) are ignored by default.

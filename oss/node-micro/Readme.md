@@ -45,5 +45,3 @@ We use our "custom" `node` binary (`node-v8.9.0-linux-x64`) to run the `micro` b
   }
 }
 ```
-
-Lastly, the `node-v8.9.0-linux-x64` binary is excluded from version control (via `.gitignore`) but is re-included to the Up instance (via `.upignore`).
