@@ -8,5 +8,12 @@
   },
   "lambda": {
     "memory": 1024
+  },
+  "stages": {
+    "development": {
+      "proxy": {
+        "command": "micro --host localhost --port $PORT"
+      }
+    }
   }
 }
