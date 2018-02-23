@@ -25,6 +25,7 @@
 - [node basic](./node-basic) – Hello world.
 - [node basic memory](./node-basic-memory) – Hello world with max memory/cpu.
 - [node crashes](./node-crashes) – Crash recovery from uncaught exceptions.
+- [node debug](./node-debug) – Logging using stderr example.
 - [node env](./node-env) – Environment variable management.
 - [node errors](./node-errors) – Default error pages.
 - [node express](./node-express) – Express application.
@@ -37,7 +38,6 @@
 - [node micro](./node-micro) – Run the [`micro`](https://github.com/zeit/micro) binary with a non-native Node v8.x runtime.
 - [node micro alt](./node-micro-alt) – Run the [`micro`](https://github.com/zeit/micro) programmatically.
 - [node next](./node-next) – Next.js application.
-- [node nuxt](./node-nuxt) – Nuxt.js application.
 - [node redirect](./node-redirect) – Tiny redirect app.
 - [node spa](./node-spa) – Single page app using React & Neutrino.
 - [python 3.4](./python-3.4) – Hello world using Python `3.4.3`.
