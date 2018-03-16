@@ -8,7 +8,7 @@ http.createServer((req, res) => {
     <head>
       <meta charset="utf-8">
       <title>Node Static</title>
-      <link rel="stylesheet" href="/static/style.css">
+      <link rel="stylesheet" href="static/style.css">
     </head>
     <body>
       <p>Hello World</p>
