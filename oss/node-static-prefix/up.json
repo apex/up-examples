@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "static": {
+    "dir": "public",
+    "prefix": "/static/"
+  }
+}

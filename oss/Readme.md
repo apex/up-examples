@@ -35,11 +35,14 @@
 - [node graphql](./node-graphql) – GraphQL server.
 - [node koa](./node-koa) – Koa website.
 - [node logging](./node-logging) – Logging example with plain-text and JSON logs.
+- [node logging 2](./node-logging-2) – Logging example with the `up` module.
 - [node micro](./node-micro) – Run the [`micro`](https://github.com/zeit/micro) binary with a non-native Node v8.x runtime.
 - [node micro alt](./node-micro-alt) – Run the [`micro`](https://github.com/zeit/micro) programmatically.
 - [node next](./node-next) – Next.js application.
 - [node redirect](./node-redirect) – Tiny redirect app.
 - [node spa](./node-spa) – Single page app using React & Neutrino.
+- [node static](./node-static) – Node app with static file serving from Up.
+- [node static prefix](./node-static-prefix) – Node app with static file serving from Up.
 - [python 3.4](./python-3.4) – Hello world using Python `3.4.3`.
 - [python basic](./python-basic) – Hello world.
 - [python bottle](./python-bottle) – A python app using the Bottle microframework.

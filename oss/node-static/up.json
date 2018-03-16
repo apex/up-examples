@@ -1,0 +1,6 @@
+{
+  "name": "app",
+  "static": {
+    "dir": "public"
+  }
+}
