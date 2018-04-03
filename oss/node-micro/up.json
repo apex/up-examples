@@ -1,19 +1,9 @@
 {
   "name": "app",
-  "hooks": {
-    "build": "make"
-  },
   "proxy": {
-    "command": "./node-v8.9.4-linux-x64/bin/node node_modules/.bin/micro --host localhost --port $PORT"
+    "command": "micro --host localhost --port $PORT"
   },
   "lambda": {
     "memory": 1024
-  },
-  "stages": {
-    "development": {
-      "proxy": {
-        "command": "micro --host localhost --port $PORT"
-      }
-    }
   }
 }
