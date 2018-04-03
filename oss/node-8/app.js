@@ -1,9 +1,11 @@
-const sleep = require('sleep-promise')
+const axios = require('axios')
 const http = require('http')
 
 const { PORT = 3000 } = process.env
+const url = 'https://apex.sh'
 
 http.createServer(async (req, res) => {
-  await sleep(1)
-  res.end('Hello World from Node 8\n')
+  const start = Date.now()
+  await axios.get(url)
+  res.end(`Response time: ${Date.now() - start}ms`)
 }).listen(PORT)

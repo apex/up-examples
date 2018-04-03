@@ -1,11 +1,5 @@
 {
   "name": "app",
-  "hooks": {
-    "build": "make"
-  },
-  "proxy": {
-    "command": "./node-v8.9.4-linux-x64/bin/node app.js"
-  },
   "lambda": {
     "memory": 1024
   }

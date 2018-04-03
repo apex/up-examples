@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "sleep-promise": "^2.0.0"
+    "axios": "^0.18.0"
   }
 }
