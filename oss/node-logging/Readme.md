@@ -44,10 +44,6 @@ $ curl `up url`/crash
 
 ## Notes
 
-Up supports indented logs, useful for cases such
-as stack traces, so they're considered a single
-log message and not one per line.
-
 JSON logs need at least these fields:
 
 - `level` (string) – severity level
