@@ -10,5 +10,5 @@ up production
 curl -s `up url`
 # equals: Hello Loki from staging (NODE_ENV=production)
 
-curl -s `up url production`
+curl -s `up url -s production`
 # equals: Hello Jane from production (NODE_ENV=production)

@@ -30,7 +30,7 @@ View them:
 
 ```
 $ up url -o
-$ up url -o production
+$ up url -s production -o
 ```
 
 By default env variables are scoped to _all_ stages, so you'll see the same results. You may also define env vars scoped to a particular stage, using the `-s` or `--stage` flag:
@@ -43,6 +43,6 @@ $ up env add -s production MSG NAME Jane
 Now restart by deploying again:
 
 ```
-$ up 
+$ up
 $ up production
 ```

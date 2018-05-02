@@ -20,7 +20,7 @@ $ up production
 Check out the version:
 
 ```
-$ curl `up url production`
+$ curl `up url -s production`
 Version 5
 ```
 
@@ -28,7 +28,7 @@ Rollback:
 
 ```
 $ up rollback
-$ curl `up url production`
+$ curl `up url -s production`
 Version 4
 ```
 
@@ -36,6 +36,6 @@ Rollback to a specific version:
 
 ```
 $ up rollback 5
-$ curl `up url production`
+$ curl `up url -s production`
 Version 5
 ```

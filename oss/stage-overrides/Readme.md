@@ -12,5 +12,5 @@ $ up production
 
 ```
 $ curl `up url`
-$ curl `up url production`
+$ curl `up url -s production`
 ```

@@ -14,5 +14,5 @@ $ up
 Alerts are currently applied to production only, so make sure to `up deploy production` first! Then perform some requests to trigger the alarm(s) with:
 
 ```
-$ curl `up url production`
+$ curl `up url -s production`
 ```
