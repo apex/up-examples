@@ -1,3 +1,7 @@
 {
-  "name": "app"
+  "name": "app",
+  "cors": {
+    "enable": true,
+    "debug": true
+  }
 }
