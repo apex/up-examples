@@ -35,7 +35,7 @@ const body = JSON.stringify({
 })
 
 const res = await fetch('http://localhost:3000', {
-  headers: { 'Content-Type': 'application/json' },
+  headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
   method: 'POST',
   body
 })
