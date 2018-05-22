@@ -21,7 +21,7 @@
 - [java gradle springboot](./java-gradle-springboot) – Hello world.
 - [java maven spark](./java-maven-spark) – Hello world.
 - [java maven springboot](./java-maven-springboot) – Hello world.
-- [node 8](./node-8) – Node 8 application using a binary.
+- [node 8](./node-8) – Node 8 application example.
 - [node basic](./node-basic) – Hello world.
 - [node basic memory](./node-basic-memory) – Hello world with max memory/cpu.
 - [node crashes](./node-crashes) – Crash recovery from uncaught exceptions.
@@ -32,17 +32,18 @@
 - [node express browserify](./node-express-browserify) – Express application using a bundler to reduce require() time and build size.
 - [node express spawn](./node-express-spawn) – Fun server that let's you spawn commands on the host VM.
 - [node fastify](./node-fastify) – [Fastify](http://www.fastify.io/) application.
-- [node graphql](./node-graphql) – GraphQL server.
+- [node graphql](./node-graphql) – GraphQL server with CORS.
 - [node koa](./node-koa) – Koa website.
 - [node logging](./node-logging) – Logging example with plain-text and JSON logs.
 - [node logging 2](./node-logging-2) – Logging example with the `up` module.
-- [node micro](./node-micro) – Run the [`micro`](https://github.com/zeit/micro) binary with a non-native Node v8.x runtime.
+- [node micro](./node-micro) – Run the [`micro`](https://github.com/zeit/micro) binary.
 - [node micro alt](./node-micro-alt) – Run the [`micro`](https://github.com/zeit/micro) programmatically.
 - [node next](./node-next) – Next.js application.
 - [node redirect](./node-redirect) – Tiny redirect app.
 - [node spa](./node-spa) – Single page app using React & Neutrino.
+- [node start](./node-start) – Hello world using `npm start`.
 - [node static](./node-static) – Node app with static file serving from Up.
-- [node static prefix](./node-static-prefix) – Node app with static file serving from Up.
+- [node static prefix](./node-static-prefix) – Node app with static file serving from Up with prefix.
 - [python 3.4](./python-3.4) – Hello world using Python `3.4.3`.
 - [python basic](./python-basic) – Hello world.
 - [python bottle](./python-bottle) – A python app using the Bottle microframework.
