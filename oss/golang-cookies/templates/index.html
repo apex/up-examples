@@ -12,13 +12,14 @@
     </style>
   </head>
   <body>
-    {{with .Name}}
-      <p>Here's your stuff: <strong>{{.Value}}</strong></p>
+    {{if .First}}
+      <p>Hello {{.First}} {{.Last}}!</p>
     {{else}}
-      <p>Save stuff!</p>
+      <p>Enter your name please :)</p>
     {{end}}
     <form action="" method="post">
-      <input type="text" name="name" value="" placeholder="Name">
+      <input type="text" name="first" value="" placeholder="First name">
+      <input type="text" name="last" value="" placeholder="Last name">
       <input type="submit" name="submit" value="Save">
     </form>
   </body>

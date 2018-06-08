@@ -20,23 +20,32 @@ func main() {
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
-	name, _ := r.Cookie("name")
+	first, _ := r.Cookie("first")
+	last, _ := r.Cookie("last")
 
 	w.Header().Set("Content-Type", "text/html")
 
 	views.ExecuteTemplate(w, "index.html", struct {
-		Name *http.Cookie
+		First string
+		Last  string
 	}{
-		Name: name,
+		First: first.String(),
+		Last:  last.String(),
 	})
 }
 
 func submit(w http.ResponseWriter, r *http.Request) {
-	name := r.FormValue("name")
+	first := r.FormValue("first")
+	last := r.FormValue("last")
 
 	http.SetCookie(w, &http.Cookie{
-		Name:  "name",
-		Value: name,
+		Name:  "first",
+		Value: first,
+	})
+
+	http.SetCookie(w, &http.Cookie{
+		Name:  "last",
+		Value: last,
 	})
 
 	back := r.Header.Get("Referer")
