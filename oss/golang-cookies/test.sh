@@ -1,7 +1,10 @@
 up
 
 curl -s `up url`
-# contains: Save stuff!
+# contains: Enter your name please
 
-curl -s -H "Cookie: name=Tobi" `up url`
-# contains: Here's your stuff: <strong>Tobi</strong>
+curl -s -d first=Tobi -d last=Ferret -D- `up url`
+# contains: set-cookie: first=Tobi
+
+curl -s -d first=Tobi -d last=Ferret -D- `up url`
+# contains: set-cookie: last=Ferret
