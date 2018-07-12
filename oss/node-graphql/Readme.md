@@ -25,7 +25,7 @@ $ curl -d '{ "query": "{ pet(id: 0) { name }}" }' `up url`?pretty
 
 With `fetch()` in the browser:
 
-``js
+```js
 const body = JSON.stringify({
   query: `query {
     pet(id: 2) {
