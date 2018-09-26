@@ -32,5 +32,8 @@ end
 
 port = ENV["PORT"].to_i
 
-server = HTTP::Server.new(port, [HTTP::LogHandler.new, App.new])
+server = HTTP::Server.new([HTTP::LogHandler.new, App.new])
+address = server.bind_tcp port
+
+puts "Listening on http://#{address}"
 server.listen
