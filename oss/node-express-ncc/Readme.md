@@ -7,6 +7,7 @@ Express application using the ncc bundler.
 
 ```
 $ yarn
+$ npm i -g @zeit/ncc
 ```
 
 ## Deploy
