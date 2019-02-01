@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "hooks": {
+    "build": "ncc build app.js -o server",
+    "clean": "rm -fr server"
+  },
+  "stages": {
+    "staging": {
+      "proxy": {
+        "command": "node server/index.js"
+      }
+    },
+    "production": {
+      "proxy": {
+        "command": "node server/index.js"
+      }
+    }
+  }
+}
