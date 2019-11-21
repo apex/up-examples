@@ -1,4 +1,7 @@
 {
   "name": "app",
-  "type": "static"
+  "type": "static",
+  "error_pages": {
+    "enable": true
+  }
 }

@@ -2,6 +2,7 @@
   "name": "app",
   "type": "static",
   "error_pages": {
+    "enable": true,
     "variables": {
       "support_email": "support@apex.sh",
       "color": "#228ae6"
