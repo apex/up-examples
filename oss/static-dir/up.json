@@ -3,5 +3,8 @@
   "type": "static",
   "static": {
     "dir": "public"
+  },
+  "error_pages": {
+    "enable": true
   }
 }
