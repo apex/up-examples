@@ -3,6 +3,6 @@
     "start": "node app"
   },
   "dependencies": {
-    "fastify": "^0.26.2"
+    "fastify": "^0.38.0"
   }
 }
