@@ -3,7 +3,7 @@
   "stages": {
     "staging": {
       "lambda": {
-        "runtime": "nodejs8.x"
+        "runtime": "nodejs8.10"
       }
     },
     "production": {
