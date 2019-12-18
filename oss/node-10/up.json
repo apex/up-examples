@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "lambda": {
+    "runtime": "nodejs10.x",
+    "memory": 1024
+  }
+}
