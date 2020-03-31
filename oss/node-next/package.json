@@ -5,7 +5,7 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
-    "next": "^4",
+    "next": "^9",
     "react": "^16",
     "react-dom": "^16"
   }
